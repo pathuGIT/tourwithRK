@@ -9,9 +9,10 @@
         </li>
     </div>
     <nav class="bottomnav " id="myTopnav">
+        <p id="kk"></p>
         <ul>
             <li>
-                <a id="icon">
+                <a id="icon" onclick="fun_visible()">
                     <i class="fa fa-bars"></i>
                 </a>
             </li>

@@ -103,7 +103,30 @@
                     navbar.classList.remove("sticky");
                 }
             }
+
+            
+            // var navItems = document.querySelectorAll('#myTopnav ul li:not(:first-child)');
+            // navItems.forEach(function(item) {
+            //     item.style.display = "block";
+            // });
+
         });
+        
+        function fun_visible(){
+            console.log("eer");
+            var navItems = document.querySelectorAll('#myTopnav ul li:not(:first-child)');
+            navItems.forEach(function(item) {
+                if (item.style.display === "none") {
+                    item.style.display = "block";
+                    console.log("Unhidden:", item);
+                } else {
+                    item.style.display = "none";
+                    console.log("Hidden:", item);
+                }
+            });  
+        }
+
+
     </script>
     </body>
 </html>

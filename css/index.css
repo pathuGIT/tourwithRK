@@ -65,10 +65,17 @@ header .bottomnav ul li:not(:first-child):hover {
   background-color: rgba(53, 152, 177, 0.0705882353);
 }
 
+.sticky {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 10px;
+}
+
 @media only screen and (max-width: 600px) {
-  header .bottomnav {
-    position: fixed;
-  }
   header .bottomnav #icon {
     visibility: visible;
   }
@@ -83,13 +90,4 @@ header .bottomnav ul li:not(:first-child):hover {
   header .bottomnav ul li a {
     color: white;
   }
-}
-.sticky {
-  position: fixed;
-  top: 0px;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 10px;
 }/*# sourceMappingURL=index.css.map */
