@@ -4,54 +4,102 @@
   font-family: Arial, sans-serif;
 }
 
+$bg-linear-color:linear-gradient(to right, #3598b1 , #1c818f);
+
 @mixin decoration{
   a{
     text-decoration: none;
   }
   list-style-type: none;
 }
-@mixin flexStyle{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+@mixin flexStyle($type){
 }
 
 header{
-  border: 1px solid black;
+  //border: 1px solid black;
   @include decoration;
 
   .topnav{
-    border: 1px solid red;
-    @include flexStyle;
+    //border: 1px solid rgb(0, 0, 0);
+    background-image: linear-gradient(to right, #3598b1 , #1c818f);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     #logo{
       width: 100px;
-      margin: 5px;
+      margin: 5px 5px 5px 10px;
       img{
         width: 100%;
       }
     }
     .social{
-      background-color: red;
       font-size: x-large;
       margin-right: 30px;
+      a{
+        padding-right: 10px;
+        i{
+          color: white;
+        }
+      }
     }
   }
 
   .bottomnav{
+    background-color:	#1a5a74;
+    padding: 5px 0;
     #icon{
       visibility: hidden;
     }
     ul{
       @include decoration;
-      @include flexStyle;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
       justify-content:flex-end;
-      li{
-        border: 1px solid rgba(128, 128, 128, 0.873);
+      li:not(:first-child){
+        border-right: 1px solid rgba(128, 128, 128, 0.873);
         padding: 5px 20px;
+        cursor: pointer;
+        a{
+          color: white;
+        }
+      }
+      li:not(:first-child):hover{
+        background-color: #3598b112;
       }
       
       margin-right: 30px;
     }
   }
+}
+@media only screen and (max-width: 600px) {
+  header{
+    .bottomnav{
+      position: fixed;
+      #icon{
+        visibility: visible;
+      }
+      ul{
+        flex-direction: column;
+        align-items:start;
+        li{
+          width: 100%;
+          padding: 5px 20px;
+          a{
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+.sticky {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 10px;
 }

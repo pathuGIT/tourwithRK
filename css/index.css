@@ -5,14 +5,13 @@
 }
 
 header {
-  border: 1px solid black;
   list-style-type: none;
 }
 header a {
   text-decoration: none;
 }
 header .topnav {
-  border: 1px solid red;
+  background-image: linear-gradient(to right, #3598b1, #1c818f);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -20,15 +19,24 @@ header .topnav {
 }
 header .topnav #logo {
   width: 100px;
-  margin: 5px;
+  margin: 5px 5px 5px 10px;
 }
 header .topnav #logo img {
   width: 100%;
 }
 header .topnav .social {
-  background-color: red;
   font-size: x-large;
   margin-right: 30px;
+}
+header .topnav .social a {
+  padding-right: 10px;
+}
+header .topnav .social a i {
+  color: white;
+}
+header .bottomnav {
+  background-color: #1a5a74;
+  padding: 5px 0;
 }
 header .bottomnav #icon {
   visibility: hidden;
@@ -45,7 +53,43 @@ header .bottomnav ul {
 header .bottomnav ul a {
   text-decoration: none;
 }
-header .bottomnav ul li {
-  border: 1px solid rgba(128, 128, 128, 0.873);
+header .bottomnav ul li:not(:first-child) {
+  border-right: 1px solid rgba(128, 128, 128, 0.873);
   padding: 5px 20px;
+  cursor: pointer;
+}
+header .bottomnav ul li:not(:first-child) a {
+  color: white;
+}
+header .bottomnav ul li:not(:first-child):hover {
+  background-color: rgba(53, 152, 177, 0.0705882353);
+}
+
+@media only screen and (max-width: 600px) {
+  header .bottomnav {
+    position: fixed;
+  }
+  header .bottomnav #icon {
+    visibility: visible;
+  }
+  header .bottomnav ul {
+    flex-direction: column;
+    align-items: start;
+  }
+  header .bottomnav ul li {
+    width: 100%;
+    padding: 5px 20px;
+  }
+  header .bottomnav ul li a {
+    color: white;
+  }
+}
+.sticky {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 10px;
 }/*# sourceMappingURL=index.css.map */

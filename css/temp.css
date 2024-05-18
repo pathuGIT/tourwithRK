@@ -11,7 +11,7 @@ header {
 
 header .brand {
   padding-left: 25px;
-  background-image: linear-gradient(to right, #3598b1, #1c818f);
+  background-color: #045164;
 }
 
 header .brand li {
