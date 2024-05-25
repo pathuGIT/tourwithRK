@@ -37,6 +37,7 @@ header .topnav .social a i {
 header .bottomnav {
   background-color: #1a5a74;
   padding: 5px 0;
+  z-index: 1;
 }
 header .bottomnav #icon {
   visibility: hidden;
@@ -75,6 +76,63 @@ header .bottomnav ul li:not(:first-child):hover {
   padding-top: 10px;
 }
 
+.main {
+  z-index: 2;
+  border: 1px solid black;
+}
+.main .test {
+  display: flex;
+  flex-direction: row-reverse;
+  border: 2px solid rgb(41, 210, 55);
+  position: relative;
+}
+.main .test .cover {
+  border: 1px solid black;
+  flex: 70%;
+  width: 100%;
+}
+.main .test .cover img {
+  border: 1px solid blue;
+  height: 100%;
+}
+.main .test .dot {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  padding: 0 30px;
+}
+.main .test .dot div {
+  font-size: 30px;
+}
+.main .test .info-box {
+  background-color: rgb(255, 244, 244);
+  flex: 30%;
+  margin-left: 10%;
+  padding: 10px;
+  text-align: center;
+}
+.main .test .info-box .travel-info h2 {
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.main .test .info-box .travel-info p {
+  padding: 10px 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+}
+.main .test .info-box .travel-info #strong-line {
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 900px) {
+  .main .test {
+    flex-direction: column;
+  }
+  .main .test .info-box {
+    margin: 0;
+  }
+}
 @media only screen and (max-width: 600px) {
   header .bottomnav #icon {
     visibility: visible;
@@ -89,5 +147,11 @@ header .bottomnav ul li:not(:first-child):hover {
   }
   header .bottomnav ul li a {
     color: white;
+  }
+  .main .test {
+    flex-direction: column;
+  }
+  .main .test .info-box {
+    margin: 0;
   }
 }/*# sourceMappingURL=index.css.map */
