@@ -78,21 +78,17 @@ header .bottomnav ul li:not(:first-child):hover {
 
 .main {
   z-index: 2;
-  border: 1px solid black;
 }
 .main .test {
   display: flex;
   flex-direction: row-reverse;
-  border: 2px solid rgb(41, 210, 55);
   position: relative;
 }
 .main .test .cover {
-  border: 1px solid black;
   flex: 70%;
   width: 100%;
 }
 .main .test .cover img {
-  border: 1px solid blue;
   height: 100%;
 }
 .main .test .dot {
@@ -106,11 +102,18 @@ header .bottomnav ul li:not(:first-child):hover {
   font-size: 30px;
 }
 .main .test .info-box {
-  background-color: rgb(255, 244, 244);
   flex: 30%;
   margin-left: 10%;
   padding: 10px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main .test .info-box .travel-info {
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgb(255, 244, 244);
 }
 .main .test .info-box .travel-info h2 {
   font-weight: 600;
@@ -123,6 +126,121 @@ header .bottomnav ul li:not(:first-child):hover {
 }
 .main .test .info-box .travel-info #strong-line {
   font-size: 15px;
+}
+.main .test .info-box .travel-info {
+  background-color: rgb(255, 244, 244);
+  padding: 15px 10px;
+}
+.main .test .info-box .travel-info h2 {
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.main .test .info-box .travel-info p {
+  padding: 10px 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+}
+.main .test .info-box .travel-info #strong-line {
+  font-size: 15px;
+}
+.main .test .info-box .travel-info h2 {
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.main .test .info-box .travel-info p {
+  padding: 10px 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+}
+.main .test .info-box .travel-info #strong-line {
+  font-size: 15px;
+}
+.main .about-box {
+  border: 1px solid rgb(0, 0, 0);
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.main .about-box .left-col {
+  border: 1px solid rgb(0, 0, 0);
+  flex: 30%;
+  background-color: rgba(128, 128, 128, 0.873);
+  align-content: center;
+}
+.main .about-box .left-col .scroll-box {
+  border: 1px solid rgb(0, 0, 0);
+  height: 88vh;
+  margin: 20px;
+  overflow-y: scroll;
+}
+.main .about-box .left-col .scroll-box div {
+  border: 1px solid rgb(160, 54, 54);
+  width: 100%;
+  height: 30vh;
+  overflow: hidden;
+}
+.main .about-box .left-col .scroll-box div img {
+  width: 100%;
+  cursor: pointer;
+}
+.main .about-box .right-col {
+  border: 1px solid rgb(165, 63, 63);
+  flex: 70%;
+  margin: 20px;
+  position: relative;
+}
+.main .about-box .right-col div {
+  border: 1px solid grey;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.main .about-box .right-col #newYar {
+  background-color: #64ae80;
+}
+.main .about-box .right-col #vesak {
+  background-color: #676b5d;
+}
+.main .about-box .right-col #poson {
+  background-color: #ae6478;
+}
+.main .about-box .right-col #perehera {
+  background-color: #6a64ae;
+}
+.main .about-box .right-col #aboutlanka {
+  background-color: #e1cc81;
+}
+.main .content-box {
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(219, 251, 249);
+}
+.main .content-box h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
+  text-align: left;
+  padding: 20px;
+}
+.main .content-box .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+.main .content-box .content div {
+  flex: 30%;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(255, 244, 244);
+  margin: 10px;
+  border-radius: 5px;
+}
+.main .content-box .content div h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
+}
+.main .content-box .content div p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 10px 0;
 }
 
 @media only screen and (max-width: 900px) {
@@ -153,5 +271,15 @@ header .bottomnav ul li:not(:first-child):hover {
   }
   .main .test .info-box {
     margin: 0;
+    padding: 10px;
+  }
+  .main .test .info-box .travel-info h2 {
+    font-size: 20px;
+  }
+  .main .test .info-box .travel-info p {
+    font-size: 14px;
+  }
+  .main .test .info-box .travel-info #strong-line {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=index.css.map */

@@ -21,9 +21,9 @@
     <div class="container main">
         <div class="test">
             <div class="cover">
-                <img class="mySlides" src="img/back.png" style="width:100%">
-                <img class="mySlides" src="img/back1.png" style="width:100%">
-                <img class="mySlides" src="img/back2.png" style="width:100%">
+                <img class="mySlides" src="img/ask1.png" style="width:100%">
+                <img class="mySlides" src="img/ask.png" style="width:100%">
+                <img class="mySlides" src="img/ask2.png" style="width:100%">
             </div>
             <div class="dot" style="width:100%">
                 <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
@@ -31,12 +31,12 @@
             </div>
             <div class="info-box">
                 <div class="travel-info">
-                    <h2>Explore with Confidence</h2>
+                    <h2>Explore  with Confidence</h2>
                     <p>
                     With my extensive experience as a trusted tourist driver, we ensure your holiday experience is both exciting and compliant with recommended health guidelines. From airport pick-up to drop-off, we take care of all the details, allowing you to fully enjoy your personalized journey.
                     </p>
                     <p id="strong-line"><strong>Just book your flight & let us handle the rest.</strong></p>
-                    <p><strong>Contact us for step-by-step instructions:</strong></p>
+                    <!-- <p><strong>Contact us for step-by-step instructions:</strong></p> -->
                     <p>
                         <strong>WhatsApp:</strong> +94 721058986<br>
                         <strong>Email:</strong> <a href="mailto:info@tourwithrk.com">info@tourwithrk.com</a>
@@ -44,13 +44,50 @@
                 </div>
             </div>
         </div>
-        <div class="plans">
-            <h1>aa</h1>
-            <h1>aa</h1>
-            <h1>aa</h1>
-            <h1>aa</h1>
-            <h1>aa</h1>
-        </div>    
+        
+        <div class="about-box">
+            <div class="left-col">
+                <div class="scroll-box">
+                    <div> <img src="img/back.png" alt="events"> </div>
+                    <div> <img src="img/back.png" alt="events"> </div>
+                    <div> <img src="img/back.png" alt="events"> </div>
+                    <div> <img src="img/back.png" alt="events"> </div>
+                </div>
+            </div>
+            <div class="right-col">
+                <div id="newYear"></div>
+                <div id="vesak"></div>
+                <div id="poson"></div>
+                <div id="perehera"></div>
+                <div id="aboutlanka"></div>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Our Services</h2>
+            <div class="content">
+                <div class="service-box">
+                    <img src="img/1.png" alt="Service 1">
+                    <h3>Transportation</h3>
+                    <p>Efficient, reliable, and safe transportation services for all your travel needs. From airport pick-up to drop-off, we provide a variety of vehicle options to suit your requirements.</p>
+                </div>
+                <div class="service-box">
+                    <img src="img/2.png" alt="Service 2">
+                    <h3>Accommodation</h3>
+                    <p>Book your stay at the finest hotels, resorts, and guesthouses across the island. We offer a range of accommodation options to suit your budget and preferences.</p>
+                </div>
+                <div class="service-box">
+                    <img src="img/3.png" alt="Service 3">
+                    <h3>Adventure Tours</h3>
+                    <p>Embark on thrilling adventures and explore the hidden gems of Sri Lanka with our custom tour packages. Experience the best of the island’s natural beauty, wildlife, and culture.</p>
+                </div>
+                <div class="service-box">
+                    <img src="img/4.png" alt="Service 4">
+                    <h3>Guided Tours</h3>
+                    <p>Discover the rich history, culture, and attractions of Sri Lanka with our expert tour guides. Enjoy a personalized tour experience that caters to your interests and preferences.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
 

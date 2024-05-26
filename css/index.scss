@@ -83,20 +83,23 @@ header{
 .sticky + .content {
   padding-top: 10px;
 }
+
+// here create the style for main class
 .main{
   z-index: 2;
-  border: 1px solid black;
+  // border: 1px solid black;
+  // here create the style for test class
   .test{
     display: flex;
     flex-direction: row-reverse;
-    border: 2px solid rgb(41, 210, 55);
+    // border: 2px solid rgb(41, 210, 55);
     position: relative;
     .cover{
-      border: 1px solid black;
+      // border: 1px solid black;
       flex: 70%;
       width: 100%;
       img{
-        border: 1px solid blue;
+        // border: 1px solid blue;
         height: 100%;
       }
     }
@@ -110,13 +113,55 @@ header{
         font-size: 30px;
       }
     }
+
+    // 
     .info-box{
-      background-color: rgb(255, 244, 244);
       flex: 30%;
       margin-left: 10%;
       padding: 10px ;
       text-align: center;
+      //middle all element inside this box
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      // create the style for travel-info class
       .travel-info{
+        // style this class box card with shadow 
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        background-color: rgb(255, 244, 244);
+        h2{
+          font-weight: 600;
+          font-family: $fnt-fmily;
+        }
+        p{
+          padding: 10px 0;
+          font-family: $fnt-fmily;
+          font-size: 16px;
+        }
+        #strong-line{
+          font-size: 15px;
+        }
+      }
+    
+      .travel-info{
+        background-color: rgb(255, 244, 244);
+        //add some padding
+        padding: 15px 10px;
+        h2{
+          font-weight: 600;
+          font-family: $fnt-fmily;
+        }
+        p{
+          padding: 10px 0;
+          font-family: $fnt-fmily;
+          font-size: 16px;
+        }
+        #strong-line{
+          font-size: 15px;
+        }
+      
         h2{
           font-weight: 600;
           font-family: $fnt-fmily;
@@ -132,8 +177,105 @@ header{
       }
     }
   }
+
+  .about-box{
+    border: 1px solid rgb(0, 0, 0);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    .left-col{
+      border: 1px solid rgb(0, 0, 0);
+      flex: 30%;
+      background-color: rgba(128, 128, 128, 0.873);
+      align-content: center;
+    
+      .scroll-box{
+        border: 1px solid rgb(0, 0, 0);
+        height: 88vh;
+        margin: 20px;
+        overflow-y: scroll;
+        div{
+          border: 1px solid rgb(160, 54, 54);
+          width: 100%;
+          height: 30vh;
+          overflow: hidden;
+          img{
+            width: 100%;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .right-col{
+      border: 1px solid rgb(165, 63, 63);
+      flex: 70%;
+      margin: 20px;
+      position: relative;
+      div{
+        border: 1px solid grey;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
+      #newYar{
+        background-color: #64ae80;
+      }
+      #vesak{
+        background-color: #676b5d;
+      }
+      #poson{
+        background-color: #ae6478;
+      }
+      #perehera{
+        background-color: #6a64ae;
+      }
+      #aboutlanka{
+        background-color: #e1cc81;
+      }
+    }
+  }
+
+
+  // here create the style for content-box class
+  .content-box{
+    //style for the h2 element 
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(219, 251, 249);
+    h2{
+      font-family: $fnt-fmily;
+      font-weight: 600;
+      text-align: left;
+      padding: 20px;
+    }
+    .content{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 20px;
+
+      //create styles for all div inside above content class
+      div{
+        flex: 30%;
+        padding: 10px;
+        text-align: center;
+        background-color: rgb(255, 244, 244);
+        margin: 10px;
+        border-radius: 5px;
+        h3{
+          font-family: $fnt-fmily;
+          font-weight: 600;
+        }
+        p{
+          font-family: $fnt-fmily;
+          padding: 10px 0;
+        }
+      }
+      
+    }
+  }
 }
 
+//
 @media only screen and (max-width: 900px) {
   .main{
     .test{
@@ -151,7 +293,10 @@ header{
     }
   }
 }
+
+// here create the style for mobile view
 @media only screen and (max-width: 600px) {
+  // here create the style for header class for mobile view
   header{
     .bottomnav{
       #icon{
@@ -170,6 +315,7 @@ header{
       }
     }
   }
+  // here create the style for above main class for mobile view
   .main{
     .test{
         flex-direction: column;
@@ -180,9 +326,23 @@ header{
         div{
         }
       }
+      //create the responsive style for info-box class here
       .info-box{
         margin: 0;
+        padding: 10px;
+        .travel-info{
+          h2{
+            font-size: 20px;
+          }
+          p{
+            font-size: 14px;
+          }
+          #strong-line{
+            font-size: 12px;
+          }
+        }
       }
     }
   }
+  
 }
