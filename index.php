@@ -48,18 +48,33 @@
         <div class="about-box">
             <div class="left-col">
                 <div class="scroll-box">
-                    <div> <img src="img/back.png" alt="events"> </div>
-                    <div> <img src="img/back.png" alt="events"> </div>
-                    <div> <img src="img/back.png" alt="events"> </div>
-                    <div> <img src="img/back.png" alt="events"> </div>
+                    
+                    <div id="click-newYear"> <img src="img/back.png" alt="events"> </div>
+                    <div id="click-vesak"> <img src="img/back.png" alt="events"> </div>
+                    <div id="click-poson"> <img src="img/back.png" alt="events"> </div>
+                    <div id="click-perehera"> <img src="img/back.png" alt="events"> </div>
                 </div>
             </div>
             <div class="right-col">
-                <div id="newYear"></div>
-                <div id="vesak"></div>
-                <div id="poson"></div>
-                <div id="perehera"></div>
-                <div id="aboutlanka"></div>
+                <div id="newYear">
+                    Happy New Year
+                    <button id="close-btn1"><img src="img/exit.png" alt=""></button>
+                </div>
+                <div id="vesak">
+                    Vesak
+                    <button id="close-btn2"><img src="img/exit.png" alt=""></button>
+                </div>
+                <div id="poson">
+                    Poson
+                    <button id="close-btn3"><img src="img/exit.png" alt=""></button>
+                </div>
+                <div id="perehera">
+                    Perehara
+                    <button id="close-btn4"><img src="img/exit.png" alt=""></button>
+                </div>
+                <div id="aboutlanka">
+                    Welcome to Sri Lanka
+                </div>
             </div>
         </div>
 
@@ -156,5 +171,7 @@
         }
 
     </script>
+    
+    <script src="js/smovePane.js"></script>
     </body>
 </html>

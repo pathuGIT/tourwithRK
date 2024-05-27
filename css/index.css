@@ -195,8 +195,11 @@ header .bottomnav ul li:not(:first-child):hover {
   height: 100%;
   position: absolute;
 }
-.main .about-box .right-col #newYar {
-  background-color: #64ae80;
+.main .about-box .right-col #aboutlanka {
+  background-color: #e1cc81;
+}
+.main .about-box .right-col #newYear {
+  background-color: #00ae43;
 }
 .main .about-box .right-col #vesak {
   background-color: #676b5d;
@@ -206,9 +209,6 @@ header .bottomnav ul li:not(:first-child):hover {
 }
 .main .about-box .right-col #perehera {
   background-color: #6a64ae;
-}
-.main .about-box .right-col #aboutlanka {
-  background-color: #e1cc81;
 }
 .main .content-box {
   border: 1px solid rgb(0, 0, 0);
