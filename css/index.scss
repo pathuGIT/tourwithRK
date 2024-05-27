@@ -126,29 +126,29 @@ header{
       justify-content: center;
 
       // create the style for travel-info class
-      .travel-info{
-        // style this class box card with shadow 
-        border-radius: 5px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        background-color: rgb(255, 244, 244);
-        h2{
-          font-weight: 600;
-          font-family: $fnt-fmily;
-        }
-        p{
-          padding: 10px 0;
-          font-family: $fnt-fmily;
-          font-size: 16px;
-        }
-        #strong-line{
-          font-size: 15px;
-        }
-      }
+      // .travel-info{
+      //   // style this class box card with shadow 
+      //   border-radius: 5px;
+      //   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      //   background-color: rgb(255, 244, 244);
+      //   h2{
+      //     font-weight: 600;
+      //     font-family: $fnt-fmily;
+      //   }
+      //   p{
+      //     padding: 10px 0;
+      //     font-family: $fnt-fmily;
+      //     font-size: 17px;
+      //   }
+      //   #strong-line{
+      //     font-size: 15px;
+      //   }
+      // }
     
       .travel-info{
         background-color: rgb(255, 244, 244);
         //add some padding
-        padding: 15px 10px;
+        padding: 15px 20px;
         h2{
           font-weight: 600;
           font-family: $fnt-fmily;
@@ -169,10 +169,10 @@ header{
         p{
           padding: 10px 0;
           font-family: $fnt-fmily;
-          font-size: 16px;
+          font-size: 20px;
         }
         #strong-line{
-          font-size: 15px;
+          font-size: 18px;
         }
       }
     }

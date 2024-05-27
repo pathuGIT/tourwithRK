@@ -21,9 +21,9 @@
     <div class="container main">
         <div class="test">
             <div class="cover">
-                <img class="mySlides" src="img/ask1.png" style="width:100%">
-                <img class="mySlides" src="img/ask.png" style="width:100%">
                 <img class="mySlides" src="img/ask2.png" style="width:100%">
+                <img class="mySlides" src="img/ask1.png" style="width:100%">
+                <img class="mySlides" src="img/ask3.png" style="width:100%">
             </div>
             <div class="dot" style="width:100%">
                 <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
@@ -33,7 +33,7 @@
                 <div class="travel-info">
                     <h2>Explore  with Confidence</h2>
                     <p>
-                    With my extensive experience as a trusted tourist driver, we ensure your holiday experience is both exciting and compliant with recommended health guidelines. From airport pick-up to drop-off, we take care of all the details, allowing you to fully enjoy your personalized journey.
+                        With my extensive experience as a trusted tourist driver, we ensure your holiday experience is both exciting and compliant with recommended health guidelines. From airport pick-up to drop-off, we take care of all the details, allowing you to fully enjoy your personalized journey. 
                     </p>
                     <p id="strong-line"><strong>Just book your flight & let us handle the rest.</strong></p>
                     <!-- <p><strong>Contact us for step-by-step instructions:</strong></p> -->

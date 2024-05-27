@@ -111,25 +111,8 @@ header .bottomnav ul li:not(:first-child):hover {
   justify-content: center;
 }
 .main .test .info-box .travel-info {
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: rgb(255, 244, 244);
-}
-.main .test .info-box .travel-info h2 {
-  font-weight: 600;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-.main .test .info-box .travel-info p {
-  padding: 10px 0;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 16px;
-}
-.main .test .info-box .travel-info #strong-line {
-  font-size: 15px;
-}
-.main .test .info-box .travel-info {
-  background-color: rgb(255, 244, 244);
-  padding: 15px 10px;
+  padding: 15px 20px;
 }
 .main .test .info-box .travel-info h2 {
   font-weight: 600;
@@ -150,10 +133,10 @@ header .bottomnav ul li:not(:first-child):hover {
 .main .test .info-box .travel-info p {
   padding: 10px 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
 }
 .main .test .info-box .travel-info #strong-line {
-  font-size: 15px;
+  font-size: 18px;
 }
 .main .about-box {
   border: 1px solid rgb(0, 0, 0);
