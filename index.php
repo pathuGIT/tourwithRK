@@ -8,6 +8,9 @@
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap" rel="stylesheet">
         <style>
             .mySlides {display:none}
             .w3-left, .w3-right, .w3-badge {cursor:pointer}
@@ -21,9 +24,9 @@
     <div class="container main">
         <div class="test">
             <div class="cover">
-                <img class="mySlides" src="img/ask2.png" style="width:100%">
-                <img class="mySlides" src="img/ask1.png" style="width:100%">
-                <img class="mySlides" src="img/ask3.png" style="width:100%">
+                <img class="mySlides" src="img/slideShow/ask2.png" style="width:100%">
+                <img class="mySlides" src="img/slideShow/ask1.png" style="width:100%">
+                <img class="mySlides" src="img/slideShow/ask3.png" style="width:100%">
             </div>
             <div class="dot" style="width:100%">
                 <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
@@ -48,32 +51,67 @@
         <div class="about-box">
             <div class="left-col">
                 <div class="scroll-box">
-                    
-                    <div id="click-newYear"> <img src="img/back.png" alt="events"> </div>
-                    <div id="click-vesak"> <img src="img/back.png" alt="events"> </div>
-                    <div id="click-poson"> <img src="img/back.png" alt="events"> </div>
-                    <div id="click-perehera"> <img src="img/back.png" alt="events"> </div>
+
+                    <div id="click-perehera"> 
+                        <p>Kandy Perahera</p>
+                        <img src="img/traditional/perahera.jpg" alt="events"> 
+                    </div>
+                    <div id="click-newYear"> 
+                        <p>New Year</p>
+                        <img src="img/traditional/aurudu.png" alt="events"> 
+                    </div>
+                    <div id="click-vesak"> 
+                        <p>Vesak Poya Day</p>
+                        <img src="img/traditional/vesak.jpg" alt="events"> 
+                    </div>
+                    <div id="click-poson"> 
+                        <p>Poson Poya Day</p>
+                        <img src="img/traditional/poson.png" alt="events"> 
+                    </div>
                 </div>
             </div>
             <div class="right-col">
-                <div id="newYear">
-                    Happy New Year
-                    <button id="close-btn1"><img src="img/exit.png" alt=""></button>
-                </div>
-                <div id="vesak">
-                    Vesak
-                    <button id="close-btn2"><img src="img/exit.png" alt=""></button>
-                </div>
-                <div id="poson">
-                    Poson
-                    <button id="close-btn3"><img src="img/exit.png" alt=""></button>
-                </div>
-                <div id="perehera">
+                
+                <div class="shipt-box" id="perehera">
                     Perehara
                     <button id="close-btn4"><img src="img/exit.png" alt=""></button>
                 </div>
-                <div id="aboutlanka">
-                    Welcome to Sri Lanka
+                <div class="shipt-box" id="newYear">
+                    Happy New Year
+                    <button id="close-btn1"><img src="img/exit.png" alt=""></button>
+                </div>
+                <div class="shipt-box" id="vesak">
+                    Vesak
+                    <button id="close-btn2"><img src="img/exit.png" alt=""></button>
+                </div>
+                <div class="shipt-box" id="poson">
+                    Poson
+                    <button id="close-btn3"><img src="img/exit.png" alt=""></button>
+                </div>
+                <div class="shipt-box" id="aboutlanka">
+                    <div>
+                        <h2>Welcome to Sri Lanka</h2>
+                        <h3 id="ayubowan">Ayubowan</h3>
+                    </div>
+                    <p>
+                        Sri Lanka is a tropical paradise that offers a unique blend of natural beauty, rich history, and vibrant culture. From pristine beaches and lush tea plantations to ancient temples and wildlife sanctuaries, the island has something for everyone. Whether you are looking for adventure, relaxation, or cultural experiences, Sri Lanka has it all. Let us help you discover the best of this enchanting island with our personalized tour packages.
+                    </p>    
+                    <div class="min-box">
+                        <div><img src="" alt="">sas</div>
+                        <div>
+                            <h1>The Gem of the Indian Ocean</h1>
+                            <p>Experience Sri Lanka’s stunning beaches, lush jungles, and ancient wonders. Savor world-class cuisine, vibrant culture, and thrilling safaris. Your perfect paradise getaway awaits!</p>
+                            <ul>
+                                <li>Beautiful beaches</li>
+                                <li>Cultural heritage</li>
+                                <li>Wildlife sanctuaries</li>
+                                <li>Tea plantations</li>
+                                <li>Adventure activities</li>
+                                <li>Warm hospitality</li>
+                            </ul>
+                        </div>
+                        <div><img src="" alt="">sa</div>
+                    </div>
                 </div>
             </div>
         </div>

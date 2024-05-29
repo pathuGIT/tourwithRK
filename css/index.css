@@ -143,11 +143,10 @@ header .bottomnav ul li:not(:first-child):hover {
   height: 100vh;
   display: flex;
   flex-direction: row;
+  background-color: #fbfbfb;
 }
 .main .about-box .left-col {
-  border: 1px solid rgb(0, 0, 0);
   flex: 30%;
-  background-color: rgba(128, 128, 128, 0.873);
   align-content: center;
 }
 .main .about-box .left-col .scroll-box {
@@ -157,14 +156,25 @@ header .bottomnav ul li:not(:first-child):hover {
   overflow-y: scroll;
 }
 .main .about-box .left-col .scroll-box div {
-  border: 1px solid rgb(160, 54, 54);
-  width: 100%;
-  height: 30vh;
+  width: 99%;
+  height: 35vh;
   overflow: hidden;
+  margin-top: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgb(255, 255, 255);
+}
+.main .about-box .left-col .scroll-box div p {
+  padding: 10px;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 22px;
 }
 .main .about-box .left-col .scroll-box div img {
   width: 100%;
   cursor: pointer;
+}
+.main .about-box .left-col .scroll-box div:last-child {
+  margin-bottom: 5px;
 }
 .main .about-box .right-col {
   border: 1px solid rgb(165, 63, 63);
@@ -172,14 +182,57 @@ header .bottomnav ul li:not(:first-child):hover {
   margin: 20px;
   position: relative;
 }
-.main .about-box .right-col div {
+.main .about-box .right-col .shipt-box {
   border: 1px solid grey;
   width: 100%;
   height: 100%;
   position: absolute;
 }
 .main .about-box .right-col #aboutlanka {
-  background-color: #e1cc81;
+  overflow-y: scroll;
+  background-color: #fbfbfb;
+  padding: 70px 70px;
+}
+.main .about-box .right-col #aboutlanka div {
+  background-color: #00ae43;
+  position: relative;
+}
+.main .about-box .right-col #aboutlanka div h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 7vh;
+  font-weight: 400;
+}
+.main .about-box .right-col #aboutlanka div #ayubowan {
+  position: absolute;
+  top: 0;
+  transform: translateY(-70%);
+  font-family: "Corinthia", cursive;
+  font-weight: 900;
+  font-size: 15vh;
+  color: rgba(0, 0, 0, 0.238);
+}
+.main .about-box .right-col #aboutlanka p {
+  font-family: cursive;
+  font-size: 18px;
+  padding: 50px 0 0 0;
+  text-align: left;
+}
+.main .about-box .right-col #aboutlanka .min-box {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+.main .about-box .right-col #aboutlanka .min-box div:nth-child(1) {
+  flex: 30%;
+  border: 1px solid black;
+}
+.main .about-box .right-col #aboutlanka .min-box div:nth-child(2) {
+  background-color: red;
+  flex: 40%;
+}
+.main .about-box .right-col #aboutlanka .min-box div:nth-child(3) {
+  flex: 30%;
+  border: 1px solid black;
 }
 .main .about-box .right-col #newYear {
   background-color: #00ae43;
