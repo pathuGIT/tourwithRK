@@ -1,0 +1,73 @@
+
+//
+@media only screen and (max-width: 900px) {
+    .main{
+      .test{
+          flex-direction: column;
+  
+        .cover{
+        }
+        .dot{
+          div{
+          }
+        }
+        .info-box{
+          margin: 0;
+        }
+      }
+    }
+  }
+  
+  // here create the style for mobile view
+  @media only screen and (max-width: 600px) {
+    // here create the style for header class for mobile view
+    header{
+      .bottomnav{
+        #icon{
+          visibility: visible;
+        }
+        ul{
+          flex-direction: column;
+          align-items:start;
+          li{
+            width: 100%;
+            padding: 5px 20px;
+            a{
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    // here create the style for above main class for mobile view
+    .main{
+      .test{
+          flex-direction: column;
+  
+        .cover{
+        }
+        .dot{
+          div{
+          }
+        }
+        //create the responsive style for info-box class here
+        .info-box{
+          margin: 0;
+          padding: 10px;
+          .travel-info{
+            h2{
+              font-size: 20px;
+            }
+            p{
+              font-size: 14px;
+            }
+            #strong-line{
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+    
+  }
+  

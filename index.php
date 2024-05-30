@@ -5,6 +5,7 @@
         <title>Tour With RK</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/in-responsive.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -73,8 +74,38 @@
             <div class="right-col">
                 
                 <div class="shipt-box" id="perehera">
-                    Perehara
+                    <div class="pad">
+                    <h1>Perehara</h1>
+                    <h1>Perehara</h1>
+                    <h1>Perehara</h1>
+                    <h1>Perehara</h1>
+                    <h1>Perehara</h1>
+                    <h1>Perehara</h1>
+                    <h1>Perehara</h1>
+                    <h1>Perehara</h1>
+                    <h1>Perehara</h1>
+                    <h1>Perehara</h1>
+                    <h1>Perehara</h1>
+                    <h1>Perehara</h1>
+                    <h1>Perehara</h1>
+                    <h1>Perehara</h1>
+                    <h1>Perehara</h1>
+                    <h1>Perehara</h1>
+                    <h1>Perehara</h1>
+                    <h1>Perehara</h1>
+                    <h1>Perehara</h1>
+                    <h1>Perehara</h1>
+                    <h1>Perehara</h1>
+                    <h1>Perehara</h1>
+                    <h1>Perehara</h1>
+                    <h1>Perehara</h1>
+                    <h1>Perehara</h1>
+                    <h1>Perehara</h1>
+                    <h1>Perehara</h1>
+                    <h1>Perehara</h1>
+                    <h1>Perehara</h1>
                     <button id="close-btn4"><img src="img/exit.png" alt=""></button>
+                    </div>
                 </div>
                 <div class="shipt-box" id="newYear">
                     Happy New Year
@@ -89,28 +120,23 @@
                     <button id="close-btn3"><img src="img/exit.png" alt=""></button>
                 </div>
                 <div class="shipt-box" id="aboutlanka">
-                    <div>
-                        <h2>Welcome to Sri Lanka</h2>
-                        <h3 id="ayubowan">Ayubowan</h3>
-                    </div>
-                    <p>
-                        Sri Lanka is a tropical paradise that offers a unique blend of natural beauty, rich history, and vibrant culture. From pristine beaches and lush tea plantations to ancient temples and wildlife sanctuaries, the island has something for everyone. Whether you are looking for adventure, relaxation, or cultural experiences, Sri Lanka has it all. Let us help you discover the best of this enchanting island with our personalized tour packages.
-                    </p>    
-                    <div class="min-box">
-                        <div><img src="" alt="">sas</div>
+                    <div class="content-inside">
                         <div>
-                            <h1>The Gem of the Indian Ocean</h1>
-                            <p>Experience Sri Lanka’s stunning beaches, lush jungles, and ancient wonders. Savor world-class cuisine, vibrant culture, and thrilling safaris. Your perfect paradise getaway awaits!</p>
-                            <ul>
-                                <li>Beautiful beaches</li>
-                                <li>Cultural heritage</li>
-                                <li>Wildlife sanctuaries</li>
-                                <li>Tea plantations</li>
-                                <li>Adventure activities</li>
-                                <li>Warm hospitality</li>
-                            </ul>
+                            <h2>Welcome to Sri Lanka</h2>
+                            <h3 id="ayubowan">Ayubowan</h3>
                         </div>
-                        <div><img src="" alt="">sa</div>
+                        <p>
+                            Sri Lanka is a tropical paradise that offers a unique blend of natural beauty, rich history, and vibrant culture. From pristine beaches and lush tea plantations to ancient temples and wildlife sanctuaries, the island has something for everyone. Whether you are looking for adventure, relaxation, or cultural experiences, Sri Lanka has it all. Let us help you discover the best of this enchanting island with our personalized tour packages.
+                        </p>    
+                        <div class="min-box">
+                            <div><img src="img/traditional/galle-f.png" alt="" title="galle"></div>
+                            <div>
+                                <h3>The Gem of the Indian Ocean</h3>
+                                <p>Experience Sri Lanka’s stunning beaches, lush jungles, and ancient wonders. Savor world-class cuisine, vibrant culture, and thrilling safaris. Your perfect paradise getaway awaits!</p>
+                                
+                            </div>
+                            <div><img src="img/traditional/tw-elephant.png" alt="" title="Yale" ></div>
+                        </div>
                     </div>
                 </div>
             </div>

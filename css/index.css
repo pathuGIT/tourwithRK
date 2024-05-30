@@ -183,26 +183,27 @@ header .bottomnav ul li:not(:first-child):hover {
   position: relative;
 }
 .main .about-box .right-col .shipt-box {
-  border: 1px solid grey;
   width: 100%;
   height: 100%;
   position: absolute;
+  background-color: #00ae43;
 }
 .main .about-box .right-col #aboutlanka {
   overflow-y: scroll;
   background-color: #fbfbfb;
-  padding: 70px 70px;
 }
-.main .about-box .right-col #aboutlanka div {
-  background-color: #00ae43;
+.main .about-box .right-col #aboutlanka .content-inside {
+  padding: 100px 50px 50px 50px;
+}
+.main .about-box .right-col #aboutlanka .content-inside div {
   position: relative;
 }
-.main .about-box .right-col #aboutlanka div h2 {
+.main .about-box .right-col #aboutlanka .content-inside div h2 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 7vh;
   font-weight: 400;
 }
-.main .about-box .right-col #aboutlanka div #ayubowan {
+.main .about-box .right-col #aboutlanka .content-inside div #ayubowan {
   position: absolute;
   top: 0;
   transform: translateY(-70%);
@@ -211,28 +212,42 @@ header .bottomnav ul li:not(:first-child):hover {
   font-size: 15vh;
   color: rgba(0, 0, 0, 0.238);
 }
-.main .about-box .right-col #aboutlanka p {
-  font-family: cursive;
-  font-size: 18px;
+.main .about-box .right-col #aboutlanka .content-inside p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
   padding: 50px 0 0 0;
   text-align: left;
-}
-.main .about-box .right-col #aboutlanka .min-box {
-  display: flex;
-  flex-direction: row;
   margin-top: 50px;
 }
-.main .about-box .right-col #aboutlanka .min-box div:nth-child(1) {
-  flex: 30%;
-  border: 1px solid black;
+.main .about-box .right-col #aboutlanka .content-inside .min-box {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
 }
-.main .about-box .right-col #aboutlanka .min-box div:nth-child(2) {
-  background-color: red;
+.main .about-box .right-col #aboutlanka .content-inside .min-box div:nth-child(1) {
+  flex: 30%;
+}
+.main .about-box .right-col #aboutlanka .content-inside .min-box div:nth-child(1) img {
+  width: 100%;
+}
+.main .about-box .right-col #aboutlanka .content-inside .min-box div:nth-child(2) {
   flex: 40%;
+  padding: 50px 10px;
+  text-align: center;
 }
-.main .about-box .right-col #aboutlanka .min-box div:nth-child(3) {
+.main .about-box .right-col #aboutlanka .content-inside .min-box div:nth-child(2) h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: 1px solid rgba(255, 217, 0, 0.397);
+}
+.main .about-box .right-col #aboutlanka .content-inside .min-box div:nth-child(2) p {
+  text-align: center;
+  padding: 10px 30px;
+}
+.main .about-box .right-col #aboutlanka .content-inside .min-box div:nth-child(3) {
   flex: 30%;
-  border: 1px solid black;
+}
+.main .about-box .right-col #aboutlanka .content-inside .min-box div:nth-child(3) img {
+  width: 100%;
 }
 .main .about-box .right-col #newYear {
   background-color: #00ae43;
@@ -244,7 +259,11 @@ header .bottomnav ul li:not(:first-child):hover {
   background-color: #ae6478;
 }
 .main .about-box .right-col #perehera {
+  overflow-y: scroll;
   background-color: #6a64ae;
+}
+.main .about-box .right-col #perehera .pad {
+  padding: 50px;
 }
 .main .content-box {
   border: 1px solid rgb(0, 0, 0);
@@ -277,45 +296,4 @@ header .bottomnav ul li:not(:first-child):hover {
 .main .content-box .content div p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 10px 0;
-}
-
-@media only screen and (max-width: 900px) {
-  .main .test {
-    flex-direction: column;
-  }
-  .main .test .info-box {
-    margin: 0;
-  }
-}
-@media only screen and (max-width: 600px) {
-  header .bottomnav #icon {
-    visibility: visible;
-  }
-  header .bottomnav ul {
-    flex-direction: column;
-    align-items: start;
-  }
-  header .bottomnav ul li {
-    width: 100%;
-    padding: 5px 20px;
-  }
-  header .bottomnav ul li a {
-    color: white;
-  }
-  .main .test {
-    flex-direction: column;
-  }
-  .main .test .info-box {
-    margin: 0;
-    padding: 10px;
-  }
-  .main .test .info-box .travel-info h2 {
-    font-size: 20px;
-  }
-  .main .test .info-box .travel-info p {
-    font-size: 14px;
-  }
-  .main .test .info-box .travel-info #strong-line {
-    font-size: 12px;
-  }
 }/*# sourceMappingURL=index.css.map */

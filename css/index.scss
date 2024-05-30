@@ -124,26 +124,6 @@ header{
       display: flex;
       flex-direction: column;
       justify-content: center;
-
-      // create the style for travel-info class
-      // .travel-info{
-      //   // style this class box card with shadow 
-      //   border-radius: 5px;
-      //   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      //   background-color: rgb(255, 244, 244);
-      //   h2{
-      //     font-weight: 600;
-      //     font-family: $fnt-fmily;
-      //   }
-      //   p{
-      //     padding: 10px 0;
-      //     font-family: $fnt-fmily;
-      //     font-size: 17px;
-      //   }
-      //   #strong-line{
-      //     font-size: 15px;
-      //   }
-      // }
     
       .travel-info{
         background-color: rgb(255, 244, 244);
@@ -222,58 +202,72 @@ header{
       margin: 20px;
       position: relative;
       .shipt-box{
-        border: 1px solid grey;
         width: 100%;
         height: 100%;
         position: absolute;
-
+        background-color: #00ae43;
       }
-      #aboutlanka{
+      #aboutlanka{ // About lanka Styling Start
         overflow-y: scroll;
-        div{
-          background-color: #00ae43;
-          position: relative;
-          h2{
-            
-            font-family: $fnt-fmily;
-            font-size: 7vh;
-            font-weight: 400;
-          }
-          #ayubowan{
-            position: absolute;
-            top: 0;
-            transform: translateY(-70%);
-            font-family: "Corinthia", cursive;
-            font-weight: 900;
-            font-size: 15vh;
-            color: rgba(0, 0, 0, 0.238);
-          }
-        }
         background-color: #fbfbfb;
-        padding: 70px 70px;
-        p{
-          font-family: cursive;
-          font-size: 18px;
-          padding: 50px 0 0 0 ;
-          text-align: left;
-        }
-        .min-box{
-          display: flex;
-          flex-direction: row;
-          margin-top: 50px;
-          div:nth-child(1){
-            flex: 30%;
-            border: 1px solid black;
+        .content-inside{
+          //padding: 0 50px;
+          padding: 100px 50px 50px 50px;
+          div{
+            position: relative;
+            h2{
+              font-family: $fnt-fmily;
+              font-size: 7vh;
+              font-weight: 400;
+            }
+            #ayubowan{
+              position: absolute;
+              top: 0;
+              transform: translateY(-70%);
+              font-family: "Corinthia", cursive;
+              font-weight: 900;
+              font-size: 15vh;
+              color: rgba(0, 0, 0, 0.238);
+            }
           }
-          div:nth-child(2){
-            background-color: red;
-            flex: 40%;
+          p{
+            font-family: $fnt-fmily;
+            font-size: 20px;
+            padding: 50px 0 0 0 ;
+            text-align: left;
+            margin-top: 50px;
           }
-          div:nth-child(3){
-            flex: 30%;
-            border: 1px solid black;
+          .min-box{
+            display: flex;
+            flex-direction: row;
+            margin-top: 100px;
+            div:nth-child(1){
+              flex: 30%;
+              img{
+                width: 100%;
+              }
+            }
+            div:nth-child(2){
+              flex: 40%;
+              padding: 50px 10px;
+              text-align: center;
+              h3{
+                font-family: $fnt-fmily;
+                border: 1px solid rgba(255, 217, 0, 0.397);
+              }
+              p{
+                text-align: center;
+                padding:10px 30px;
+              }
+            }
+            div:nth-child(3){
+              flex: 30%;
+              img{
+                width: 100%;
+              }
+            }
           }
-        }
+        } 
       }
       #newYear{
         background-color: #00ae43;
@@ -285,7 +279,12 @@ header{
         background-color: #ae6478;
       }
       #perehera{
+        overflow-y: scroll;
         background-color: #6a64ae;
+        .pad{
+          
+        padding: 50px;
+        }
       }
     }
   }
@@ -328,76 +327,4 @@ header{
       
     }
   }
-}
-
-//
-@media only screen and (max-width: 900px) {
-  .main{
-    .test{
-        flex-direction: column;
-
-      .cover{
-      }
-      .dot{
-        div{
-        }
-      }
-      .info-box{
-        margin: 0;
-      }
-    }
-  }
-}
-
-// here create the style for mobile view
-@media only screen and (max-width: 600px) {
-  // here create the style for header class for mobile view
-  header{
-    .bottomnav{
-      #icon{
-        visibility: visible;
-      }
-      ul{
-        flex-direction: column;
-        align-items:start;
-        li{
-          width: 100%;
-          padding: 5px 20px;
-          a{
-            color: white;
-          }
-        }
-      }
-    }
-  }
-  // here create the style for above main class for mobile view
-  .main{
-    .test{
-        flex-direction: column;
-
-      .cover{
-      }
-      .dot{
-        div{
-        }
-      }
-      //create the responsive style for info-box class here
-      .info-box{
-        margin: 0;
-        padding: 10px;
-        .travel-info{
-          h2{
-            font-size: 20px;
-          }
-          p{
-            font-size: 14px;
-          }
-          #strong-line{
-            font-size: 12px;
-          }
-        }
-      }
-    }
-  }
-  
 }

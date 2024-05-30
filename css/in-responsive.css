@@ -1,0 +1,40 @@
+@media only screen and (max-width: 900px) {
+  .main .test {
+    flex-direction: column;
+  }
+  .main .test .info-box {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  header .bottomnav #icon {
+    visibility: visible;
+  }
+  header .bottomnav ul {
+    flex-direction: column;
+    align-items: start;
+  }
+  header .bottomnav ul li {
+    width: 100%;
+    padding: 5px 20px;
+  }
+  header .bottomnav ul li a {
+    color: white;
+  }
+  .main .test {
+    flex-direction: column;
+  }
+  .main .test .info-box {
+    margin: 0;
+    padding: 10px;
+  }
+  .main .test .info-box .travel-info h2 {
+    font-size: 20px;
+  }
+  .main .test .info-box .travel-info p {
+    font-size: 14px;
+  }
+  .main .test .info-box .travel-info #strong-line {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=in-responsive.css.map */
