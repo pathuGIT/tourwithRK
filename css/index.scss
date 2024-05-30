@@ -159,7 +159,9 @@ header{
   }
 
   .about-box{
-    border: 1px solid rgb(0, 0, 0);
+    //border: 1px solid rgb(0, 0, 0);
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.584), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -169,7 +171,7 @@ header{
       align-content: center;
     
       .scroll-box{
-        border: 1px solid rgb(0, 0, 0);
+        //border: 1px solid rgb(0, 0, 0);
         height: 88vh;
         margin: 20px;
         overflow-y: scroll;
@@ -196,8 +198,20 @@ header{
         }
       }
     }
+    //close button
+    .close-btn{
+      padding: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 10px;
+      font-size: 10px;
+      cursor: pointer;
+      background-color:#3598b171;
+      width: 40px;
+    }
     .right-col{
-      border: 1px solid rgb(165, 63, 63);
+      border: 1px solid rgba(73, 73, 73, 0.249);
       flex: 70%;
       margin: 20px;
       position: relative;
@@ -210,7 +224,7 @@ header{
       #aboutlanka{ // About lanka Styling Start
         overflow-y: scroll;
         background-color: #fbfbfb;
-        .content-inside{
+        .content-inside-lanak{
           //padding: 0 50px;
           padding: 100px 50px 50px 50px;
           div{
@@ -270,25 +284,226 @@ header{
         } 
       }
       #newYear{
-        background-color: #00ae43;
+        overflow-y: scroll;
+        background-color: #fbfbfb;
+        .content-inside-year{
+          padding: 100px 50px 50px 50px;
+          #close-btn4{
+            padding: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 10px;
+            font-size: 10px;
+            cursor: pointer;
+            background-color:#3598b171;
+            width: 40px;
+          }
+          div{
+            float: left;
+            margin: 5px;
+            width: 40%;
+            padding: 0 50px 10px 0;
+            img{
+              width: 100%;
+            }
+          }
+          h2{
+            font-size: 3vw;
+            font-family: $fnt-fmily;
+            padding: 10px;
+          }
+          p{
+            text-align: justify;
+            font-family: $fnt-fmily;
+            font-size: 20px;
+            padding-bottom: 50px;
+          }
+          dd{
+            h3{
+              font-family: $fnt-fmily;
+              font-size: 2vw;
+              padding: 10px;
+            }
+            ul{
+              margin-left: 50px;
+              li{
+                font-family: $fnt-fmily;
+                font-size: 18px;
+                text-align: justify;
+              }
+            }
+          }
+      }
       }
       #vesak{
-        background-color: #676b5d;
+        overflow-y: scroll;
+        background-color: #fbfbfb;
+        .content-inside-vesak{
+          padding: 100px 50px 50px 50px;
+          #close-btn4{
+            padding: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 10px;
+            font-size: 10px;
+            cursor: pointer;
+            background-color:#3598b171;
+            width: 40px;
+          }
+          div{
+            float: left;
+            margin: 5px;
+            width: 40%;
+            padding: 0 50px 10px 0;
+            img{
+              width: 100%;
+            }
+          }
+          h2{
+            font-size: 3vw;
+            font-family: $fnt-fmily;
+            padding: 10px;
+          }
+          p{
+            text-align: justify;
+            font-family: $fnt-fmily;
+            font-size: 20px;
+            padding-bottom: 50px;
+          }
+          dd{
+            h3{
+              font-family: $fnt-fmily;
+              font-size: 2vw;
+              padding: 10px;
+            }
+            ul{
+              margin-left: 50px;
+              li{
+                font-family: $fnt-fmily;
+                font-size: 17px;
+                text-align: justify;
+                padding-top: 5px;
+              }
+            }
+          }
+          .last-img{
+            display: flex;
+            flex-direction: row;
+            margin-top: 50px;
+            img{
+              width: 100%;
+              text-align: center;
+              padding: 10px;
+            }
+          }
+      }
       }
       #poson{
-        background-color: #ae6478;
+        overflow-y: scroll;
+        background-color: #fbfbfb;
+        .content-inside-poson{
+          padding: 100px 50px 50px 50px;
+          #close-btn4{
+            padding: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 10px;
+            font-size: 10px;
+            cursor: pointer;
+            background-color:#3598b171;
+            width: 40px;
+          }
+          div{
+            float: left;
+            margin: 5px;
+            width: 40%;
+            padding: 0 50px 10px 0;
+            img{
+              width: 100%;
+            }
+          }
+          h2{
+            font-size: 3vw;
+            font-family: $fnt-fmily;
+            padding: 10px;
+          }
+          p{
+            text-align: justify;
+            font-family: $fnt-fmily;
+            font-size: 20px;
+            padding-bottom: 50px;
+          }
+          .last-img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+              width: 100%;
+              text-align: center;
+              padding: 10px;
+            }
+          }
+      }
       }
       #perehera{
         overflow-y: scroll;
-        background-color: #6a64ae;
-        .pad{
+        background-color: #fbfbfb;
+        .content-inside-perahera{
+          padding: 100px 50px 50px 50px;
           
-        padding: 50px;
-        }
+          div{
+            float: left;
+            margin: 5px;
+            width: 40%;
+            padding: 0 50px 10px 0;
+            img{
+              width: 100%;
+            }
+          }
+          h2{
+            font-size: 3vw;
+            font-family: $fnt-fmily;
+            padding: 10px;
+          }
+          p{
+            text-align: justify;
+            font-family: $fnt-fmily;
+            font-size: 20px;
+            padding-bottom: 50px;
+          }
+          dd{
+            h3{
+              font-family: $fnt-fmily;
+              font-size: 2vw;
+              padding: 10px;
+            }
+            ul{
+              margin-left: 50px;
+              li{
+                font-family: $fnt-fmily;
+                font-size: 18px;
+              
+              }
+            }
+          }
+          .last-img{
+            min-width: 200px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px;
+            img{
+              width: 100%;
+              text-align: center;
+            }
+          }
       }
     }
   }
-
+  }
 
   // here create the style for content-box class
   .content-box{

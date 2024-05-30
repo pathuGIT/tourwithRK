@@ -66,61 +66,114 @@
                         <img src="img/traditional/vesak.jpg" alt="events"> 
                     </div>
                     <div id="click-poson"> 
-                        <p>Poson Poya Day</p>
-                        <img src="img/traditional/poson.png" alt="events"> 
+                        <p>Vel Festival</p>
+                        <img src="img/traditional/vel2.jpg" alt="events"> 
                     </div>
                 </div>
             </div>
             <div class="right-col">
                 
                 <div class="shipt-box" id="perehera">
-                    <div class="pad">
-                    <h1>Perehara</h1>
-                    <h1>Perehara</h1>
-                    <h1>Perehara</h1>
-                    <h1>Perehara</h1>
-                    <h1>Perehara</h1>
-                    <h1>Perehara</h1>
-                    <h1>Perehara</h1>
-                    <h1>Perehara</h1>
-                    <h1>Perehara</h1>
-                    <h1>Perehara</h1>
-                    <h1>Perehara</h1>
-                    <h1>Perehara</h1>
-                    <h1>Perehara</h1>
-                    <h1>Perehara</h1>
-                    <h1>Perehara</h1>
-                    <h1>Perehara</h1>
-                    <h1>Perehara</h1>
-                    <h1>Perehara</h1>
-                    <h1>Perehara</h1>
-                    <h1>Perehara</h1>
-                    <h1>Perehara</h1>
-                    <h1>Perehara</h1>
-                    <h1>Perehara</h1>
-                    <h1>Perehara</h1>
-                    <h1>Perehara</h1>
-                    <h1>Perehara</h1>
-                    <h1>Perehara</h1>
-                    <h1>Perehara</h1>
-                    <h1>Perehara</h1>
-                    <button id="close-btn4"><img src="img/exit.png" alt=""></button>
+                    <div class="content-inside-perahera">
+                        <button id="close-btn4" class="close-btn"><img src="img/exit.png" alt=""></button>
+                        
+                        <div><img src="img/traditional/kandy-perahera (2).jpg" alt="kandy perahera"></div>
+                        <h2>Kandy Esala Perahera</h2>
+                        <p>
+                            The Kandy Dala Perahera is considered to be one of the most beautiful cultural events in Asia. The celebration is intended to honor the Sacred Tooth Relic and the found main guardian gods, Natha, Vishnu, Kataragama and Pattini. The colourful event consists of various types of dancers, drummers, fire-dancers, whip-dancers, and beautifully dressed elephants. The festival has three major processions, Kumbal Perahera, Randoli Perahera and Diya Kapeema (Water Cutting Ceremony) at the Mahaweli River at Getambe temple. The festival is a unique identity of Sri Lanka and a must see event.
+
+                            <br><br>
+                            The Kandy Esala Perahera, held annually in the city of Kandy, is one of Sri Lanka's most grand and vibrant festivals. This spectacular event, celebrated in the months of July and August, honors the Sacred Tooth Relic of Lord Buddha, enshrined at the Temple of the Tooth (Sri Dalada Maligawa).
+                        </p>
+                        <dl>
+                            <dd>
+                                <h3>Best Places to Watch:</h3>
+                                <ul>
+                                    <li><strong>Sri Dalada Maligawa (Temple of the Tooth):</strong> The heart of the festival, offering a prime viewing spot for the main procession.</li>
+                                    <li><strong>Queen’s Hotel:</strong> Located in the heart of Kandy, this historic hotel offers a comfortable and elevated view of the processions.</li>
+                                    <li><strong>Lake Club:</strong> Situated by the Kandy Lake, this spot provides a scenic backdrop and a great vantage point for the Perahera.</li>
+                                    <li><strong>Y.M.B.A. (Young Men’s Buddhist Association) Building:</strong> Another excellent location offering close-up views of the vibrant parades.</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <div class="last-img"><img src="img/traditional/kandy-perahera (1).jpg" alt=""></div>
+                        
                     </div>
                 </div>
                 <div class="shipt-box" id="newYear">
-                    Happy New Year
-                    <button id="close-btn1"><img src="img/exit.png" alt=""></button>
+                    <div class="content-inside-year">
+                            <button id="close-btn1" class="close-btn"><img src="img/exit.png" alt=""></button>
+                            
+                            <div><img src="img/traditional/new-year.jpg" alt="kandy perahera"></div>
+                            <h2>Celebrate the New Year with Sri Lankans</h2>
+                            <p>
+                                Experience the vibrant and joyous celebration of the Sri Lankan New Year, known as "Aluth Avurudda" in Sinhala and "Puthandu" in Tamil. This significant cultural event typically occurs in mid-April, marking the end of the harvest season and the beginning of the new year according to the Sinhala and Tamil solar calendar.
+                                <br><br>
+                            </p>
+                            <div style="float: right; padding: 20px 0 30px 50px; "><img src="img/traditional/New-Year2.jpeg" alt=""></div>
+                            <dl>
+                                <dd>
+                                    <h3>Festival Highlights:</h3>
+                                    <ul>
+                                        <li><strong>Traditional Customs:</strong> The heart of the festival, offering a prime viewing spot for the main procession.</li>
+                                        <li><strong>Auspicious Times</strong> Located in the heart of Kandy, this historic hotel offers a comfortable and elevated view of the processions.</li>
+                                        <li><strong>Games and Activities</strong> Situated by the Kandy Lake, this spot provides a scenic backdrop and a great vantage point for the Perahera.</li>
+                                        <li><strong>Cultural Performances</strong> Another excellent location offering close-up views of the vibrant parades.</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            
+                    </div>
                 </div>
                 <div class="shipt-box" id="vesak">
-                    Vesak
-                    <button id="close-btn2"><img src="img/exit.png" alt=""></button>
+                    <div class="content-inside-vesak">
+                            <button id="close-btn2" class="close-btn"><img src="img/exit.png" alt=""></button>
+                            
+                            <div><img src="img/traditional/Vesak2.jpg" alt="kandy perahera"></div>
+                            <h2>Poya Day Celebrations in Sri Lanka</h2>
+                            <p>
+                                Vesak Poya Day, also known simply as Vesak, is one of the most important and revered festivals in Sri Lanka. Celebrated in May, this day marks the birth, enlightenment, and passing away of Lord Buddha. It is a time for reflection, religious observances, and vibrant celebrations throughout the country.
+                                <br><br>
+                            </p>
+                            <div style="float: right; padding: 20px 0 30px 50px; "><img src="img/traditional/vesak.jpg" alt=""></div>
+                            <dl>
+                                <dd>
+                                    <h3>Special Poya Day Features:</h3>
+                                    <ul>
+                                        <li><strong>Religious Observances:</strong> Witness and participate in special prayers, meditation sessions, and alms-giving ceremonies. Temples hold Dhamma sermons and Sil campaigns, where devotees observe precepts and engage in spiritual practices.</li>
+                                        <li><strong>Lantern Displays:</strong> Particularly during Vesak Poya, temples and streets are decorated with beautiful Vesak lanterns and illuminations, creating a magical ambiance.</li>
+                                        <li><strong>Pandals (Thorana):</strong> Large, elaborately decorated structures depicting scenes from the Buddha's life are erected, especially during Vesak and Poson Poya. These pandals are illuminated at night and attract many visitors.</li>
+                                        <li><strong>Cultural Performances:</strong> Enjoy traditional dances, drumming, and music performances that are often organized around temples during Poya celebrations. These performances showcase Sri Lanka's rich cultural heritage.</li>
+                                        <li><strong>Dansal (Almsgiving Stalls):</strong> Experience the Sri Lankan tradition of Dansal, where free food and drinks are distributed to the public as an act of generosity and community spirit.</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <div class="last-img">
+                                <img src="img/traditional/vesak5.jpg" alt="">
+                                <img src="img/traditional/Vesak4.jpg" alt="">
+                                <img src="img/traditional/Vesak3.jpg" alt="">
+                            </div>
+                            
+                    </div>
                 </div>
                 <div class="shipt-box" id="poson">
-                    Poson
-                    <button id="close-btn3"><img src="img/exit.png" alt=""></button>
+                <div class="content-inside-poson">
+                            <button id="close-btn3" class="close-btn"><img src="img/exit.png" alt=""></button>
+                            
+                            <div><img src="img/traditional/vel.jpg" alt="kandy perahera"></div>
+                            <h2>Vel Festival</h2>
+                            <p>
+                            It is one of Sri Lanka’s most major Hindu and cultural celebrations. For the war-god Skandha and his trident, the event is crucial (Vel). To begin the ceremony, the Vel is paraded in a large golden chariot driven by white people who apply sacred ash to their faces. As the procession goes through the city, it is accompanied by dancers, elephants, and musicians, and Sri Lankans can hear religious melodies, bells, and drums. You’ll want to see more of the lovely parade and music. Every year in July or August, Colombo hosts this festival.
+                                <br><br>
+                            </p>
+                            <div class="last-img">
+                                <img src="img/traditional/vel3.jpg" alt="">
+                            </div>
+                            
+                    </div>
                 </div>
                 <div class="shipt-box" id="aboutlanka">
-                    <div class="content-inside">
+                    <div class="content-inside-lanak" >
                         <div>
                             <h2>Welcome to Sri Lanka</h2>
                             <h3 id="ayubowan">Ayubowan</h3>
