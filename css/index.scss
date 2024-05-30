@@ -161,11 +161,12 @@ header{
   .about-box{
     //border: 1px solid rgb(0, 0, 0);
     
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.584), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.584), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     height: 100vh;
     display: flex;
     flex-direction: row;
-    background-color: #fbfbfb;
+    //background-color: #fbfbfb;
+    background-image: linear-gradient(to right, #3598b1 , #1c828f2a);
     .left-col{
       flex: 30%;
       align-content: center;
@@ -211,7 +212,7 @@ header{
       width: 40px;
     }
     .right-col{
-      border: 1px solid rgba(73, 73, 73, 0.249);
+      //border: 1px solid rgba(73, 73, 73, 0.249);
       flex: 70%;
       margin: 20px;
       position: relative;
