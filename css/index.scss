@@ -93,6 +93,9 @@ header{
     display: flex;
     flex-direction: row-reverse;
     // border: 2px solid rgb(41, 210, 55);
+    background-color: #00ff62;
+    background-image: url('..//img/exit.png');
+    // background-repeat: no-repeat;
     position: relative;
     .cover{
       // border: 1px solid black;
@@ -166,7 +169,7 @@ header{
     display: flex;
     flex-direction: row;
     //background-color: #fbfbfb;
-    background-image: linear-gradient(to right, #3598b1 , #1c828f2a);
+    //background-image: linear-gradient(to right, #3598b1 , #1c828f2a);
     .left-col{
       flex: 30%;
       align-content: center;
@@ -510,7 +513,8 @@ header{
   .content-box{
     //style for the h2 element 
     border: 1px solid rgb(0, 0, 0);
-    background-color: rgb(219, 251, 249);
+    background-color: rgba(97, 198, 249, 0.086);
+    height: 80vh;
     h2{
       font-family: $fnt-fmily;
       font-weight: 600;
@@ -524,20 +528,36 @@ header{
       padding: 20px;
 
       //create styles for all div inside above content class
-      div{
-        flex: 30%;
+      .service-box{
+        flex: 25%;
         padding: 10px;
         text-align: center;
         background-color: rgb(255, 244, 244);
         margin: 10px;
         border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        .feed-img{
+          padding: 0;
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+          img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+          }
+        }
         h3{
+          margin: 0;
           font-family: $fnt-fmily;
           font-weight: 600;
+        }
+        small{
         }
         p{
           font-family: $fnt-fmily;
           padding: 10px 0;
+          background-color: rgba(210, 183, 183, 0.39);
         }
       }
       

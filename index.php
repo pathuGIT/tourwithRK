@@ -196,26 +196,38 @@
         </div>
 
         <div class="content-box">
-            <h2>Our Services</h2>
+            <h2>Feedback</h2>
             <div class="content">
                 <div class="service-box">
-                    <img src="img/1.png" alt="Service 1">
-                    <h3>Transportation</h3>
-                    <p>Efficient, reliable, and safe transportation services for all your travel needs. From airport pick-up to drop-off, we provide a variety of vehicle options to suit your requirements.</p>
+                    <div class="feed-img">
+                        <img src="img/feddback/u1.jpg" alt="Service 1">
+                    </div>
+                    <h3>Hanny</h3>
+                    <small>Germany</small>
+                    <p>"Fair price, quick and trustful."</p>
                 </div>
                 <div class="service-box">
-                    <img src="img/2.png" alt="Service 2">
+                    <div class="feed-img">
+                        <img src="img/feddback/girl.png" alt="Service 1">
+                    </div>
                     <h3>Accommodation</h3>
+                    <small>Germany</small>
                     <p>Book your stay at the finest hotels, resorts, and guesthouses across the island. We offer a range of accommodation options to suit your budget and preferences.</p>
                 </div>
                 <div class="service-box">
-                    <img src="img/3.png" alt="Service 3">
+                    <div class="feed-img">
+                        <img src="img/feddback/girl.png" alt="Service 1">
+                    </div>
                     <h3>Adventure Tours</h3>
+                    <small>Germany</small>
                     <p>Embark on thrilling adventures and explore the hidden gems of Sri Lanka with our custom tour packages. Experience the best of the island’s natural beauty, wildlife, and culture.</p>
                 </div>
                 <div class="service-box">
-                    <img src="img/4.png" alt="Service 4">
+                    <div class="feed-img">
+                        <img src="img/feddback/man.png" alt="Service 1">
+                    </div>
                     <h3>Guided Tours</h3>
+                    <small>Germany</small>
                     <p>Discover the rich history, culture, and attractions of Sri Lanka with our expert tour guides. Enjoy a personalized tour experience that caters to your interests and preferences.</p>
                 </div>
             </div>
