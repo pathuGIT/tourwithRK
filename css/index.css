@@ -469,24 +469,26 @@ header .bottomnav ul li:not(:first-child):hover {
   width: 100%;
   text-align: center;
 }
-.main .content-box {
+.main .feedback-box {
   border: 1px solid rgb(0, 0, 0);
-  background-color: rgba(97, 198, 249, 0.086);
+  background-color: #1c818f;
+  background-image: linear-gradient(to right, #3598b1, #1c818f);
   height: 80vh;
 }
-.main .content-box h2 {
+.main .feedback-box h2 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 600;
   text-align: left;
-  padding: 20px;
+  margin: 20px 10px 10px 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.main .content-box .content {
+.main .feedback-box .content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 20px;
 }
-.main .content-box .content .service-box {
+.main .feedback-box .content .service-box {
   flex: 25%;
   padding: 10px;
   text-align: center;
@@ -495,24 +497,33 @@ header .bottomnav ul li:not(:first-child):hover {
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.main .content-box .content .service-box .feed-img {
+.main .feedback-box .content .service-box .feed-img {
   padding: 0;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
 }
-.main .content-box .content .service-box .feed-img img {
+.main .feedback-box .content .service-box .feed-img img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
 }
-.main .content-box .content .service-box h3 {
+.main .feedback-box .content .service-box h3 {
   margin: 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 600;
 }
-.main .content-box .content .service-box p {
+.main .feedback-box .content .service-box p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 10px 0;
   background-color: rgba(210, 183, 183, 0.39);
+}
+.main .feedback-box #show-fedbk {
+  width: 96%;
+  height: 40px;
+  cursor: pointer;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }/*# sourceMappingURL=index.css.map */

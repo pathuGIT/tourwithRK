@@ -1,3 +1,19 @@
+<?php
+        // First, check if the 'add-fedbk-form' button was clicked.
+        if (isset($_POST['add-fedbk-form'])) {
+            // Redirect the user to the new page.
+            header('Location: content/add-fedbk-form.php');
+            exit(); // Make sure no further code is executed after the redirect.
+        }
+?>
+<?php
+        // First, check if the 'add-fedbk-form' button was clicked.
+        if (isset($_POST['show-fedbk'])) {
+            // Redirect the user to the new page.
+            header('Location: content/show-all-fedbk.php');
+            exit(); // Make sure no further code is executed after the redirect.
+        }
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -195,8 +211,12 @@
             </div>
         </div>
 
-        <div class="content-box">
+        <div class="feedback-box">
             <h2>Feedback</h2>
+            <form method="post">
+                <button type="submit" name="add-fedbk-form" class="w3-button w3-black" style="margin-left: 30px;">  Add your Feedback </button>
+            </form>
+        
             <div class="content">
                 <div class="service-box">
                     <div class="feed-img">
@@ -208,32 +228,37 @@
                 </div>
                 <div class="service-box">
                     <div class="feed-img">
-                        <img src="img/feddback/girl.png" alt="Service 1">
+                        <img src="img/feddback/u2.jpg" alt="Service 1">
                     </div>
-                    <h3>Accommodation</h3>
-                    <small>Germany</small>
-                    <p>Book your stay at the finest hotels, resorts, and guesthouses across the island. We offer a range of accommodation options to suit your budget and preferences.</p>
-                </div>
+                    <h3>David</h3>
+                    <small>Israel</small>
+                    <p>"I" drived with lakshan from the airport and then when i came back, he is a great guy, kind and very friendly and smiling, he help and show me places in the way that worth stopping, i enjoy the ride with his comfortable car. I really recommend on him 👍"</p>      
+                    </div>
                 <div class="service-box">
                     <div class="feed-img">
                         <img src="img/feddback/girl.png" alt="Service 1">
                     </div>
-                    <h3>Adventure Tours</h3>
-                    <small>Germany</small>
-                    <p>Embark on thrilling adventures and explore the hidden gems of Sri Lanka with our custom tour packages. Experience the best of the island’s natural beauty, wildlife, and culture.</p>
+                    <h3>Ganiliya virukoh</h3>
+                    <small>Issrael</small>
+                    <p>"He drives very well and carefully and is very"</p>
                 </div>
                 <div class="service-box">
                     <div class="feed-img">
                         <img src="img/feddback/man.png" alt="Service 1">
                     </div>
-                    <h3>Guided Tours</h3>
-                    <small>Germany</small>
-                    <p>Discover the rich history, culture, and attractions of Sri Lanka with our expert tour guides. Enjoy a personalized tour experience that caters to your interests and preferences.</p>
+                    <h3>⁠Artamonov Evgeniy </h3>
+                    <small>Russia</small>
+                    <p>"Lakshan is responsible person. Driving fast and safely."</p>
                 </div>
             </div>
-        </div>
+            
+            <form method="post">
+                <button type="submit" name="show-fedbk"  class="show-fedbk w3-button w3-black w3-light-grey" style="margin-left: 30px; width: 95%">Show all feedbacks</button>
+            </form>
+                 </div>
     </div>
 
+    
 
     <?php require_once "content/footer.php"; ?>
     <script>

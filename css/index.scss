@@ -510,16 +510,19 @@ header{
   }
 
   // here create the style for content-box class
-  .content-box{
+  .feedback-box{
     //style for the h2 element 
     border: 1px solid rgb(0, 0, 0);
-    background-color: rgba(97, 198, 249, 0.086);
+    background-color: #1c818f;
+    
+    background-image: linear-gradient(to right, #3598b1 , #1c818f);
     height: 80vh;
     h2{
       font-family: $fnt-fmily;
       font-weight: 600;
       text-align: left;
-      padding: 20px;
+      margin: 20px 10px 10px  30px;
+      font-family: $fnt-fmily;
     }
     .content{
       display: flex;
@@ -561,6 +564,15 @@ header{
         }
       }
       
+    }
+    #show-fedbk{
+      width: 96%;
+      height: 40px;
+      cursor: pointer;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: $fnt-fmily;
     }
   }
 }
