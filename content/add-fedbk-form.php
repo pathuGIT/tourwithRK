@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Tour With RK</title>
+        <title>Submit Feedback</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="..//css/index.css">
         <link rel="stylesheet" type="text/css" href="..//css/in-responsive.css">
@@ -12,58 +12,60 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap" rel="stylesheet">
-        <style>
-            .mySlides {display:none}
-            .w3-left, .w3-right, .w3-badge {cursor:pointer}
-            .w3-badge {height:13px;width:13px;padding:0}
 
-            /* body {
-                font-family: Arial, sans-serif;
-                background-color: #f4f4f4;
-                padding: 20px;
-            } */
-            form {
-                background-color: #fff;
-                padding: 20px;
-                margin: 50px 50px;
-                border-radius: 8px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            }
-            label {
-                display: block;
-                margin-top: 10px;
-            }
-            input[type="text"],
-            input[type="email"],
-            textarea,
-            input[type="file"] {
-                width: 100%;
-                padding: 8px;
-                margin-top: 5px;
-                border-radius: 4px;
-                border: 1px solid #ddd;
-                box-sizing: border-box; /* Makes sure the padding doesn't affect the final computed width */
-            }
-            textarea {
-                height: 100px;
-            }
-            input[type="submit"] {
-                background-color: #0056b3;
-                color: white;
-                padding: 10px 20px;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-                margin-top: 20px;
-            }
-            input[type="submit"]:hover {
-                background-color: #004494;
-            }
-        </style>    
-    </head>
-    <body>
-        <?php require_once "header2.php"; ?>
-        
+    <style>
+        .container-to-form {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 50px 100px;
+        }
+        .form-introduction{
+            flex: 30%;
+            padding: 20px;
+        }
+        form {
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0 0 10px #ccc;
+            border-radius: 5px;
+            width: 70%; /* Adjust the width as needed */
+            max-width: 600px; /* Ensures the form is not too wide on larger screens */
+            flex: 70%;
+        }
+        label, input, textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input, textarea {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>    
+</head>
+<body>
+    <?php require_once "header2.php"; ?>
+
+    <div class="container-to-form">
+        <!-- Introduction or context for the feedback form -->
+        <div class="form-introduction">
+            <h2>We'd Love to Hear From You!</h2>
+            <p>Please fill out the form below to submit your feedback. Your insights are invaluable to us.</p>
+        </div>
+
         <form action="add-fedbk-form.php" method="post" enctype="multipart/form-data">
             <label for="username">Name:</label>
             <input type="text" id="username" name="username" required><br>
@@ -76,14 +78,21 @@
 
             <label for="feedback">Feedback:</label>
             <textarea id="feedback" name="feedback" required></textarea><br>
+            
+            <!-- Your existing form fields -->
+            <label for="sex">Sex:</label>
+            <input type="radio" id="male" name="sex" value="male" required> Male
+            <input type="radio" id="female" name="sex" value="female" required> Female<br>
 
             <label for="image">Image:</label>
             <input type="file" id="image" name="image" accept="image/*"><br>
 
             <input type="submit" name="submit" value="Submit Feedback">
         </form>
+    </div>
 
         <?php
+        // error_reporting(0);
         if (isset($_POST['submit'])) {
             // Database connection
             $conn = new mysqli('localhost:3308', 'root', '', 'tourwithRK');
@@ -100,26 +109,43 @@
             //$uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/tourwithRK/content/upload/'; // Absolute path to the upload directory
             $uploadDir = '/tourwithRK/content/upload/';
             $imagePath = $uploadDir . basename($_FILES['image']['name']);
+            $sex =  $conn->real_escape_string($_POST['sex']);
 
-            // Check if upload directory exists or try to create it
-            if (!file_exists($uploadDir)) {
-                mkdir($uploadDir, 0777, true);
-            }
-
-            // Attempt to move uploaded file to a designated path
-            if (move_uploaded_file($_FILES['image']['tmp_name'], $_SERVER['DOCUMENT_ROOT'] .$imagePath)) {
-                // Prepare an insert statement
-                $sql = "INSERT INTO feedback (username, email, country, feedback, image_path) VALUES ('$username', '$email', '$country', '$feedback', '$imagePath')";
-
-                if ($conn->query($sql) === TRUE) {
-                    echo "Feedback submitted successfully.";
-                } else {
-                    echo "Error: " . $sql . "<br>" . $conn->error;
-                }
+            $emailCheckSql = "SELECT email FROM feedback WHERE email = '$email'";
+            $emailCheckResult = $conn->query($emailCheckSql);
+            
+            if ($emailCheckResult->num_rows > 0) {
+                echo "Error: The email address already exists. Or fill all the fields.";
             } else {
-                echo "Error uploading image.";
+                // Your existing code for file upload and insert statement
+                if (!file_exists($uploadDir)) {
+                    mkdir($uploadDir, 0777, true);
+                }
+            
+                if (move_uploaded_file($_FILES['image']['tmp_name'], $_SERVER['DOCUMENT_ROOT'] . $imagePath)) {
+                    $sql = "INSERT INTO feedback (username, email, country, feedback, image_path) VALUES ('$username', '$email', '$country', '$feedback', '$imagePath')";
+            
+                    if ($conn->query($sql) === TRUE) {
+                        echo "Feedback submitted successfully.";
+                    } else {
+                        echo "Error: " . $conn->error;
+                    }
+                } else {
+                    if ($sex == 'female') {
+                        $imagePath = '/tourwithRK/content/upload/girl.png';
+                    } else {
+                        $imagePath = '/tourwithRK/content/upload/man.png';
+                    }
+                    $sql = "INSERT INTO feedback (username, email, country, feedback, image_path) VALUES ('$username', '$email', '$country', '$feedback', '$imagePath')";
+            
+                    if ($conn->query($sql) === FALSE) {
+                        echo "Error: " . $conn->error;
+                    } else {
+                        echo "Feedback submitted successfully.";
+                    }
+                }
             }
-
+            
             $conn->close();
         }
         ?>

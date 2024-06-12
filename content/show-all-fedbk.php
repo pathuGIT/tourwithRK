@@ -17,23 +17,67 @@
             .w3-left, .w3-right, .w3-badge {cursor:pointer}
             .w3-badge {height:13px;width:13px;padding:0}
 
+            .introduction {
+                text-align: center;
+                margin: 20px 10px;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            .introduction p {
+                font-size: 1em;
+                color: #333;
+                width: 50%; /* Adjust based on your preference */
+                margin: 0 auto;
+            }
             .feedback-container {
                 max-height: 600px; /* Adjust based on your preference */
                 overflow-y: auto; /* Enables vertical scrolling */
                 padding: 10px;
                 border: 1px solid #ccc; /* Optional: adds a border */
-                margin: 20px 0;
+                margin: 30px 10px;
+                width: 80%; /* Adjust based on your preference */
+                margin: 0 auto;
             }
 
             .feedback {
                 border-bottom: 1px solid #eee; /* Adds a separator between feedback entries */
                 padding-bottom: 10px;
                 margin-bottom: 10px;
+                display: flex;
+                flex-direction: row-reverse;
+                align-items:center;
+                cursor: pointer;
+                justify-content: left;
+            }
+            .feedback:hover {
+                background-color: #f9f9f9; /* Adds a hover effect */
+            }
+            .feedback .data-box {
+                flex: 1;
+                padding: 10px;
+            }
+            .feedback .imge-box {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-right: 20px;
+                border: 1px solid #ccc;
+            }
+            .feedback .imge-box img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
         </style>
     </head>
     <body>
         <?php require_once "header2.php"; ?>
+
+        <!-- Introduction Section -->
+        <section class="introduction">
+            <h1>Welcome to Our Feedback Page</h1>
+            <p>Here, we showcase the valuable feedback from our users. Each entry reflects the experiences and thoughts of our community members. Scroll down to read what they have to say about their experiences.</p>
+        </section>
 
         <div class="feedback-container">
             <?php
@@ -51,11 +95,12 @@
                 // Display each feedback
                 while($row = $result->fetch_assoc()) {
                     echo "<div class='feedback'>";
+                    echo "<div class='data-box'>";
                     echo "<p><strong>Name:</strong> " . $row["username"] . "</p>";
-                    echo "<p><strong>Email:</strong> " . $row["email"] . "</p>";
                     echo "<p><strong>Country:</strong> " . $row["country"] . "</p>";
                     echo "<p><strong>Feedback:</strong> " . $row["feedback"] . "</p>";
-                    echo "<img src='" . $row["image_path"] . "' alt='Feedback Image' style='width:100%;max-width:200px;'>";
+                    echo "</div>";
+                    echo "<div class='imge-box'><img src='" . $row["image_path"] . "' alt='Feedback Image' style='width:100%;max-width:200px;'> </div>";
                     //echo "<img src= '/tourwithRK/content/upload/IMG-20230806-WA0011.png' alt='Feedback Image' style='width:100%;max-width:200px;'>";
                     echo "</div>";
                 }
