@@ -20,7 +20,7 @@
                 <!-- <a href="..//index.php">Home</a> -->
                 <a href="/tourwithRK/index.php">Home</a>
             </li>
-            <li><a href="login.html">Packages</a></li>
+            <li><a href="/tourwithRK/content/service.php">Service</a></li>
             <li><a href="contact_us.html">Custom Your Package</a></li>
             <li><a href="aboutus.html">Contact</a></li>
         </ul>

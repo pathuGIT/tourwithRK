@@ -9,3 +9,5 @@ CREATE TABLE IF NOT EXISTS feedback (
     feedback TEXT NOT NULL,
     image_path VARCHAR(255)
 );
+ALTER TABLE feedback
+ADD CONSTRAINT unique_email UNIQUE (email);

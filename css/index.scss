@@ -512,16 +512,17 @@ header{
   // here create the style for content-box class
   .feedback-box{
     //style for the h2 element 
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
     background-color: #1c818f;
     
-    background-image: linear-gradient(to right, #3598b1 , #1c818f);
-    height: 80vh;
+    //background-image: linear-gradient(to right, #3598b1 , #1c818f);
+    background-image: linear-gradient(to right, #ffffff , #ededed);
+    height: 100vh;
     h2{
       font-family: $fnt-fmily;
       font-weight: 600;
       text-align: left;
-      margin: 20px 10px 10px  30px;
+      margin: 50px 10px 10px  30px;
       font-family: $fnt-fmily;
     }
     .content{
@@ -529,7 +530,7 @@ header{
       flex-direction: row;
       justify-content: space-between;
       padding: 20px;
-
+      margin-bottom: 50px;
       //create styles for all div inside above content class
       .service-box{
         flex: 25%;

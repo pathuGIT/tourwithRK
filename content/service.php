@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tour With RK</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="..//css/index.css">
+        <link rel="stylesheet" type="text/css" href="..//css/servise.css">
+        <link rel="stylesheet" type="text/css" href="..//css/in-responsive.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+        
+        </style>
+    </head>
+    
+    <body>
+        <?php require_once "header2.php"; ?>
+        <div class="container">
+            <div class="section-left">
+                <h2 class="top-h2">Explore Our Tour Vehicle Options</h2>
+                <div class="selection">
+                    <div class="service" id="car">
+                        <img src="/tourwithRK/img/transport/car2.png" alt="Car" style="width:100%;max-width:300px;">
+                        <p>Choose a comfortable car for your tour. Ideal for small groups or couples.</p>
+                    </div>
+                    <div class="service" id="van">
+                        <img src="/tourwithRK/img/transport/van1.png" alt="Van" style="width:100%;max-width:300px;">
+                        <p>Opt for a spacious van for larger groups. Perfect for family tours.</p>
+                    </div>
+                </div>
+                
+                <div class="day-tour">
+                    <!-- <p>Day Tours</p>
+                    <p class="introduction">We offer guided day trips and excursions to most popular attractions and also to lesser known but very adventurous and authentic attractions of Sri Lanka. These day tours designed for those who have limited time to explore Sri Lanka’s must visit tourist attractions. These are mainly day trips in Sri Lanka that start and end in Colombo, Negombo or in Colombo airport, where the tourist is expected to purchase entrance tickets and meals. Rates includes transfers in an air conditioned private vehicles driven by English speaking tourist chauffeurs.</p> -->
+
+                    <h1>Day Tours in Sri Lanka</h1>
+
+                    <h2>Introduction</h2>
+                    <p>Explore Sri Lanka's top attractions with our guided day tours, perfect for travelers with limited time. Our tours cover both popular and off-the-beaten-path destinations, starting and ending in Colombo, Negombo, or Colombo airport.</p>
+
+                    <h2 style="margin-top:50px; background-color:rgb(51, 103, 209); color:white; display:inline-block">Highlights of the Tours</h2>
+                    
+                    <h3>Popular Attractions</h3>
+                    <ul>
+                        <li><strong>Sigiriya Rock Fortress</strong>: Visit this UNESCO site for stunning views and history.</li>
+                        <li><strong>Dambulla Cave Temple</strong>: Discover the impressive Buddhist art and statues.</li>
+                        <li><strong>Kandy and the Temple of the Tooth</strong>: Experience Sri Lanka's cultural heart.</li>
+                        <li><strong>Galle Fort</strong>: Stroll through charming colonial streets with seaside views.</li>
+                    </ul>
+                    
+                    <h3 style="margin-top:40px;">Off-the-Beaten-Path Adventures</h3>
+                    <ul>
+                        <li><strong>Horton Plains National Park</strong>: Hike to World’s End for breathtaking views.</li>
+                        <li><strong>Udawalawe National Park</strong>: Enjoy a safari with close encounters with wildlife.</li>
+                        <li><strong>Ritigala Forest Monastery</strong>: Explore ancient ruins and lush surroundings.</li>
+                        <li><strong>Kitulgala</strong>: Try thrilling water sports like white-water rafting.</li>
+                    </ul>
+
+                    <h2 style="margin-top:60px; background-color:rgb(51, 103, 209); color:white; display:inline-block">Why Choose Our Day Tours?</h2>
+                    <ul>
+                        <li><strong>Expert Guides</strong>: Knowledgeable and experienced.</li>
+                        <li><strong>Customizable Itineraries</strong>: Tailored to your interests.</li>
+                        <li><strong>Value for Money</strong>: Competitive rates and quality service.</li>
+                        <li><strong>Safety and Comfort</strong>: Reliable vehicles and professional chauffeurs.</li>
+                    </ul>
+
+                    <h2 style="margin-top:60px;">Book Your Day Tour Today</h2>
+                    <p>Make the most of your limited time in Sri Lanka with our guided day tours. Book now to explore the best attractions, whether you're interested in history, nature, or adventure.</p>
+
+                    <h2 style="margin:60px 0 20px 0; background-color:rgb(51, 103, 209); color:white;">FAQs</h2>
+                    <p class="faq"><strong>How long do the day tours last?</strong><br>Between 8 to 12 hours.</p>
+                    <p class="faq"><strong>Are meals included?</strong><br>No, meals are not included.</p>
+                    <p class="faq"><strong>Do I need to buy entrance tickets separately?</strong><br>Yes, entrance tickets must be purchased separately.</p>
+                    <p class="faq"><strong>What about prise?</strong><br>Don't worry we charge low price always.</p>
+                    <p class="faq"><strong>Are the tours suitable for children?</strong><br>Yes of course.</p>
+                    <p class="faq"><strong>Can the tours be customized?</strong><br>Yes, we can tailor the itineraries to fit your needs.</p>
+                </div>
+            </div>
+            <div class="section-right">
+                <h2>right</h2>
+            </div>
+            <!-- <div class="experience">
+                <h3>About Me</h3>
+                <p>With over 2 years of experience in the field, I have been providing memorable tours for tourists from all over the world. My dedication to ensuring the best experience for my clients has been the cornerstone of my service.</p>
+            </div> -->
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                window.onscroll = function() {myFunction2()};
+                var navbar = document.getElementById("myTopnav");
+                var sticky = navbar.offsetTop;
+
+                function myFunction2() {
+                    if (window.pageYOffset >= sticky) {
+                        navbar.classList.add("sticky");
+                    } else {
+                        navbar.classList.remove("sticky");
+                    }
+                }
+
+                
+                // var navItems = document.querySelectorAll('#myTopnav ul li:not(:first-child)');
+                // navItems.forEach(function(item) {
+                //     item.style.display = "block";
+                // });
+
+            });
+            
+            function fun_visible(){
+                console.log("eer");
+                var navItems = document.querySelectorAll('#myTopnav ul li:not(:first-child)');
+                navItems.forEach(function(item) {
+                    if (item.style.display === "none") {
+                        item.style.display = "block";
+                        console.log("Unhidden:", item);
+                    } else {
+                        item.style.display = "none";
+                        console.log("Hidden:", item);
+                    }
+                });  
+            }
+        </script>
+    </body>
+</html>
