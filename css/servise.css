@@ -6,7 +6,7 @@
   align-items: flex-start;
 }
 .container .section-left {
-  border: 1px solid black;
+  border-right: 1px solid black;
   padding: 30px 0 20px 0;
   flex: 70%;
 }
@@ -74,8 +74,39 @@
   background-color: rgba(211, 211, 211, 0.8);
 }
 .container .section-right {
-  border: 1px solid black;
   flex: 30%;
+}
+.container .section-right .fixed-section-right {
+  position: fixed;
+  height: 100vh;
+  padding: 20px;
+}
+.container .section-right .fixed-section-right form {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(245, 245, 245, 0.342);
+  box-shadow: 0 0px 0px 0 rgba(230, 230, 230, 0.17), 0 0px 5px 0 rgba(0, 0, 0, 0.19);
+  padding: 30px 0;
+}
+.container .section-right .fixed-section-right form table {
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+.container .section-right .fixed-section-right form td {
+  padding-bottom: 5px;
+}
+.container .section-right .fixed-section-right form tr:nth-child(2) td {
+  padding-bottom: 20px;
+}
+.container .section-right .fixed-section-right form tr:nth-child(9) td {
+  padding-top: 20px;
+}
+.container .section-right .fixed-section-right form tr:nth-child(9) td input {
+  cursor: pointer;
+  padding: 3px;
+}
+.container .section-right .fixed-section-right form input {
+  padding-left: 5px;
 }
 .container .experience {
   flex-basis: 100%;

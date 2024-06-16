@@ -82,7 +82,52 @@
                 </div>
             </div>
             <div class="section-right">
-                <h2>right</h2>
+                <div class="fixed-section-right">
+                    <h2>Informed Us</h2>
+                    <p>Please inform us of your arrival to Sri Lanka, and we will contact you soon:</p>
+                    <form action="" method="post">
+                        <table border="1">
+                            <tr>
+                                <td colspan="2"><label for="name">Full Name:</label></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input type="text" id="name" name="name" required style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="country">Your Country:</label></td>
+                                <td><input type="text" id="country" name="country" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="phone">WhatsApp No:</label></td>
+                                <td><input type="text" id="phone" name="phone" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="email">Email:</label></td>
+                                <td><input type="email" id="email" name="email" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="number">Number of Guests:</label></td>
+                                <td><input type="number" id="number" name="number" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="date">Date of Arrival:</label></td>
+                                <td><input type="date" id="date" name="date" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="vehicle">Vehicle:</label></td>
+                                <td>
+                                    <select name="vehicle" id="vehicle" required>
+                                        <option value="car">Car</option>
+                                        <option value="van">Van</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input type="submit" value="Submit" style="width:100%"></td>
+                            </tr>        
+                        </table>
+                    </form>
+                </div>
             </div>
             <!-- <div class="experience">
                 <h3>About Me</h3>

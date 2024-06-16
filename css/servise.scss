@@ -8,7 +8,7 @@
     justify-content: space-around;
     align-items: flex-start;
     .section-left{
-        border: 1px solid black;
+        border-right: 1px solid black;
         padding: 30px 0 20px 0;
         flex: 70%;
 
@@ -83,8 +83,43 @@
         }
     }
     .section-right{
-        border: 1px solid black;
         flex: 30%;
+        .fixed-section-right{
+            position: fixed;
+            height: 100vh;
+            padding: 20px;
+            form{
+                margin-top: 30px;
+                display: flex;
+                justify-content: center;
+                background-color: rgba(245, 245, 245, 0.342);
+                box-shadow: 0 0px 0px 0 rgba(230, 230, 230, 0.17), 0 0px 5px 0 rgba(0, 0, 0, 0.19);
+                padding: 30px 0;
+                table{
+                    border: 1px solid rgba(0, 0, 0, 0);
+                }
+                td{
+                    padding-bottom: 5px;
+                }
+                tr:nth-child(2){
+                    td{
+                        padding-bottom: 20px;
+                    }
+                }
+                tr:nth-child(9){
+                    td{
+                        padding-top: 20px;
+                        input{ 
+                            cursor: pointer;
+                            padding: 3px;
+                        }
+                    }
+                }
+                input{
+                    padding-left: 5px;
+                }
+            }
+        }
     }
     
   
