@@ -54,6 +54,25 @@
         input[type="submit"]:hover {
             background-color: #45a049;
         }
+        @media (max-width: 600px) {
+            .container-to-form {
+                margin: 20px;
+                flex-direction: column;
+            }
+            .form-introduction{
+                flex: 40%;
+                padding: 20px;
+            }
+            form {
+                width: 90%; 
+            }
+            label, input, textarea {
+                margin-bottom: 1px;
+            }
+            input, textarea {
+                padding: 2px;
+            }
+        }
     </style>    
 </head>
 <body>
@@ -80,9 +99,17 @@
             <textarea id="feedback" name="feedback" required></textarea><br>
             
             <!-- Your existing form fields -->
-            <label for="sex">Sex:</label>
-            <input type="radio" id="male" name="sex" value="male" required> Male
-            <input type="radio" id="female" name="sex" value="female" required> Female<br>
+            <label for="sex" style="font-weight:bold">Sex:</label>
+            <table style="margin-bottom: 10px;">
+                <tr>
+                    <td>Male</td>
+                    <td><input type="radio" id="male" name="sex" value="male" required></td>
+                </tr>
+                <tr>
+                    <td> Female</td>
+                    <td><input type="radio" id="female" name="sex" value="female" required></td>
+                </tr>
+            </table>
 
             <label for="image">Image:</label>
             <input type="file" id="image" name="image" accept="image/*"><br>
@@ -149,5 +176,38 @@
             $conn->close();
         }
         ?>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                window.onscroll = function() {myFunction2()};
+                var navbar = document.getElementById("myTopnav");
+                var sticky = navbar.offsetTop;
+
+                function myFunction2() {
+                    if (window.pageYOffset >= sticky) {
+                        navbar.classList.add("sticky");
+                    } else {
+                        navbar.classList.remove("sticky");
+                    }
+                }
+
+            });
+            
+            function fun_visible(){
+                console.log("eer");
+                var navItems = document.querySelectorAll('#myTopnav ul li:not(:first-child)');
+                navItems.forEach(function(item) {
+                    if (item.style.display === "none") {
+                        item.style.display = "block";
+                        console.log("Unhidden:", item);
+                    } else {
+                        item.style.display = "none";
+                        console.log("Hidden:", item);
+                    }
+                });  
+            }
+            
+
+        </script>
     </body>
 </html>

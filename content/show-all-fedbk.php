@@ -68,6 +68,27 @@
                 height: 100%;
                 object-fit: cover;
             }
+
+            @media (max-width: 600px) {
+                .introduction h1{
+                    font-size: 5vw;
+                    margin-left: 15px;
+                    font-weight: bold;
+                    text-align: left;
+                }
+                .introduction p {
+                    text-align: justify;
+                    width: 90%; 
+                }
+                .feedback-container {
+                    width: 90%; /* Adjust based on your preference */
+                    margin: 0 auto;
+                }
+                .feedback .imge-box {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
         </style>
     </head>
     <body>
@@ -111,5 +132,38 @@
             ?>
         </div>
 
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                window.onscroll = function() {myFunction2()};
+                var navbar = document.getElementById("myTopnav");
+                var sticky = navbar.offsetTop;
+
+                function myFunction2() {
+                    if (window.pageYOffset >= sticky) {
+                        navbar.classList.add("sticky");
+                    } else {
+                        navbar.classList.remove("sticky");
+                    }
+                }
+
+            });
+            
+            function fun_visible(){
+                console.log("eer");
+                var navItems = document.querySelectorAll('#myTopnav ul li:not(:first-child)');
+                navItems.forEach(function(item) {
+                    if (item.style.display === "none") {
+                        item.style.display = "block";
+                        console.log("Unhidden:", item);
+                    } else {
+                        item.style.display = "none";
+                        console.log("Hidden:", item);
+                    }
+                });  
+            }
+            
+
+        </script>
     </body>
 </html>

@@ -46,15 +46,13 @@
     font-size: 12px;
   }
   .main .about-box {
-    border: 1px solid rgb(0, 0, 0);
     height: 100vh;
     display: block;
   }
   .main .about-box .left-col {
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.07);
   }
   .main .about-box .left-col .scroll-box {
-    border: 1px solid rgb(255, 0, 0);
     height: auto;
     overflow-y: none;
     display: flex;
@@ -66,7 +64,7 @@
     padding: 2px;
     margin-top: 5px;
     box-shadow: none;
-    border: 1px solid rgba(31, 31, 31, 0.299);
+    border: 1px solid rgba(0, 0, 0, 0.199);
   }
   .main .about-box .left-col .scroll-box div p {
     padding: 5px;
@@ -93,7 +91,7 @@
     width: 40px;
   }
   .main .about-box .right-col {
-    border: 3px solid rgb(0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0.458);
     margin: 10px;
     height: 60vh;
     position: relative;
