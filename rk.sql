@@ -11,3 +11,15 @@ CREATE TABLE IF NOT EXISTS feedback (
 );
 ALTER TABLE feedback
 ADD CONSTRAINT unique_email UNIQUE (email);
+
+CREATE TABLE IF NOT EXISTS bookings (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    country VARCHAR(255) NOT NULL,
+    phone VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    number_of_guests INT NOT NULL,
+    date_of_arrival DATE NOT NULL,
+    vehicle VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

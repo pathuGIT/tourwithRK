@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -83,6 +84,7 @@
             </div>
             <div class="section-right">
                 <div class="fixed-section-right">
+                    <p id="errmsg"></p>
                     <h2>Informed Us</h2>
                     <p>Please inform us of your arrival to Sri Lanka, and we will contact you soon:</p>
                     <form action="" method="post">
@@ -134,7 +136,52 @@
                 <p>With over 2 years of experience in the field, I have been providing memorable tours for tourists from all over the world. My dedication to ensuring the best experience for my clients has been the cornerstone of my service.</p>
             </div> -->
         </div>
+        <?php
+            // Database connection variables
+            $servername = "localhost:3308";
+            $username = "root";
+            $password = "";
+            $dbname = "tourwithRK";
 
+            // Create connection
+            $conn = new mysqli($servername, $username, $password, $dbname);
+
+            // Check connection
+            if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+            }
+
+            // Check if form is submitted
+            if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+                // Sanitize input data
+                $name = $conn->real_escape_string($_POST['name']);
+                $country = $conn->real_escape_string($_POST['country']);
+                $phone = $conn->real_escape_string($_POST['phone']);
+                $email = $conn->real_escape_string($_POST['email']);
+                $number_of_guests = (int)$_POST['number'];
+                $date_of_arrival = $conn->real_escape_string($_POST['date']);
+                $vehicle = $conn->real_escape_string($_POST['vehicle']);
+
+                // SQL to insert data
+                $sql = "INSERT INTO bookings (name, country, phone, email, number_of_guests, date_of_arrival, vehicle) VALUES ('$name', '$country', '$phone', '$email', $number_of_guests, '$date_of_arrival', '$vehicle')";
+
+                if ($conn->query($sql) === TRUE) {
+                    echo "<script>
+                            document.getElementById('errmsg').innerHTML = 'Your booking has been submitted successfully!';
+                            document.getElementById('errmsg').style.color = 'green';
+                            setTimeout(function() {
+                                window.location.href = '/tourwithRK/content/service.php';
+                            }, 3000); // Redirect after 2 seconds
+                        </script>";
+                } else {
+                    //echo "Error: " . $sql . "<br>" . $conn->error;
+                    echo "<script>document.getElementById('errmsg').innerHTML = 'Your booking has Not Submitted!';  document.getElementById('errmsg').style.color = 'red';</script>";
+                }
+            }
+
+            // Close connection
+            $conn->close();
+        ?>
         <script>
             document.addEventListener('DOMContentLoaded', function() {
                 window.onscroll = function() {myFunction2()};
