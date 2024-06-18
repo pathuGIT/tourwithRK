@@ -23,6 +23,14 @@
   }
   .main .test {
     flex-direction: column;
+    background-color: white;
+    background-image: none;
+  }
+  .main .test .dot {
+    top: 15%;
+  }
+  .main .test .dot div {
+    font-size: 20px;
   }
   .main .test .info-box {
     margin: 0;
@@ -36,5 +44,296 @@
   }
   .main .test .info-box .travel-info #strong-line {
     font-size: 12px;
+  }
+  .main .about-box {
+    border: 1px solid rgb(0, 0, 0);
+    height: 100vh;
+    display: block;
+  }
+  .main .about-box .left-col {
+    border: 1px solid black;
+  }
+  .main .about-box .left-col .scroll-box {
+    border: 1px solid rgb(255, 0, 0);
+    height: auto;
+    overflow-y: none;
+    display: flex;
+  }
+  .main .about-box .left-col .scroll-box div {
+    width: 99%;
+    height: auto;
+    overflow: hidden;
+    padding: 2px;
+    margin-top: 5px;
+    box-shadow: none;
+    border: 1px solid rgba(31, 31, 31, 0.299);
+  }
+  .main .about-box .left-col .scroll-box div p {
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+    height: 40px;
+  }
+  .main .about-box .left-col .scroll-box div img {
+    width: 100%;
+    cursor: pointer;
+  }
+  .main .about-box .left-col .scroll-box div:last-child {
+    margin-bottom: 5px;
+  }
+  .main .about-box .close-btn {
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    font-size: 10px;
+    cursor: pointer;
+    background-color: rgba(53, 152, 177, 0.4431372549);
+    width: 40px;
+  }
+  .main .about-box .right-col {
+    border: 3px solid rgb(0, 0, 0);
+    margin: 10px;
+    height: 60vh;
+    position: relative;
+  }
+  .main .about-box .right-col .shipt-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #00ae43;
+  }
+  .main .about-box .right-col #aboutlanka .content-inside-lanak {
+    padding: 70px 30px 0 30px;
+  }
+  .main .about-box .right-col #aboutlanka .content-inside-lanak div h2 {
+    font-size: 3vh;
+    font-weight: 400;
+  }
+  .main .about-box .right-col #aboutlanka .content-inside-lanak div #ayubowan {
+    font-size: 10vh;
+  }
+  .main .about-box .right-col #aboutlanka .content-inside-lanak p {
+    font-size: 15px;
+    padding: 0;
+    text-align: justify;
+  }
+  .main .about-box .right-col #aboutlanka .content-inside-lanak .min-box {
+    flex-direction: column;
+  }
+  .main .about-box .right-col #aboutlanka .content-inside-lanak .min-box div:nth-child(1) {
+    margin: 0 auto;
+    width: 200px;
+  }
+  .main .about-box .right-col #aboutlanka .content-inside-lanak .min-box div:nth-child(1) img {
+    width: 100%;
+  }
+  .main .about-box .right-col #aboutlanka .content-inside-lanak .min-box div:nth-child(2) h3 {
+    border: 1px solid rgb(255, 217, 0);
+  }
+  .main .about-box .right-col #aboutlanka .content-inside-lanak .min-box div:nth-child(2) p {
+    font-size: 15px;
+  }
+  .main .about-box .right-col #aboutlanka .content-inside-lanak .min-box div:nth-child(3) {
+    margin: 0 auto;
+    width: 200px;
+  }
+  .main .about-box .right-col #aboutlanka .content-inside-lanak .min-box div:nth-child(3) img {
+    width: 100%;
+  }
+  .main .about-box .right-col #newYear .content-inside-year #close-btn4 {
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    font-size: 10px;
+    cursor: pointer;
+    background-color: rgba(53, 152, 177, 0.4431372549);
+    width: 40px;
+  }
+  .main .about-box .right-col #newYear .content-inside-year div {
+    width: 300px;
+  }
+  .main .about-box .right-col #newYear .content-inside-year div img {
+    width: 100%;
+  }
+  .main .about-box .right-col #newYear .content-inside-year h2 {
+    font-size: 4vw;
+    font-weight: bold;
+  }
+  .main .about-box .right-col #newYear .content-inside-year p {
+    font-size: 15px;
+  }
+  .main .about-box .right-col #newYear .content-inside-year dd h3 {
+    font-size: 5vw;
+    font-weight: bold;
+  }
+  .main .about-box .right-col #newYear .content-inside-year dd ul {
+    margin-left: 10px;
+  }
+  .main .about-box .right-col #newYear .content-inside-year dd ul li {
+    font-size: 14px;
+  }
+  .main .about-box .right-col #vesak .content-inside-vesak #close-btn4 {
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    font-size: 10px;
+    cursor: pointer;
+    background-color: rgba(53, 152, 177, 0.4431372549);
+    width: 40px;
+  }
+  .main .about-box .right-col #vesak .content-inside-vesak div {
+    float: left;
+    margin: 5px;
+    width: 300px;
+    padding: 0 50px 10px 0;
+  }
+  .main .about-box .right-col #vesak .content-inside-vesak div img {
+    width: 100%;
+  }
+  .main .about-box .right-col #vesak .content-inside-vesak h2 {
+    font-size: 5vw;
+    font-weight: bold;
+    padding: 10px;
+  }
+  .main .about-box .right-col #vesak .content-inside-vesak p {
+    font-size: 15px;
+  }
+  .main .about-box .right-col #vesak .content-inside-vesak dd h3 {
+    font-size: 5vw;
+    font-weight: bold;
+  }
+  .main .about-box .right-col #vesak .content-inside-vesak dd ul {
+    margin-left: 10px;
+  }
+  .main .about-box .right-col #vesak .content-inside-vesak dd ul li {
+    font-size: 14px;
+  }
+  .main .about-box .right-col #vesak .content-inside-vesak .last-img {
+    flex-direction: column;
+  }
+  .main .about-box .right-col #poson .content-inside-poson #close-btn4 {
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    font-size: 10px;
+    cursor: pointer;
+    background-color: rgba(53, 152, 177, 0.4431372549);
+    width: 40px;
+  }
+  .main .about-box .right-col #poson .content-inside-poson div {
+    width: 300px;
+  }
+  .main .about-box .right-col #poson .content-inside-poson div img {
+    width: 100%;
+  }
+  .main .about-box .right-col #poson .content-inside-poson h2 {
+    font-size: 5vw;
+    font-weight: bold;
+  }
+  .main .about-box .right-col #poson .content-inside-poson p {
+    font-size: 15px;
+  }
+  .main .about-box .right-col #poson .content-inside-poson .last-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+  }
+  .main .about-box .right-col #poson .content-inside-poson .last-img img {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  .main .about-box .right-col #perehera .content-inside-perahera div {
+    width: 300px;
+  }
+  .main .about-box .right-col #perehera .content-inside-perahera div img {
+    width: 100%;
+  }
+  .main .about-box .right-col #perehera .content-inside-perahera h2 {
+    font-size: 5vw;
+  }
+  .main .about-box .right-col #perehera .content-inside-perahera p {
+    font-size: 15px;
+  }
+  .main .about-box .right-col #perehera .content-inside-perahera dd h3 {
+    font-size: 5vw;
+    padding-bottom: 10px;
+    font-weight: bold;
+  }
+  .main .about-box .right-col #perehera .content-inside-perahera dd ul {
+    margin-left: 10px;
+  }
+  .main .about-box .right-col #perehera .content-inside-perahera dd ul li {
+    font-size: 14px;
+  }
+  .main .about-box .right-col #perehera .content-inside-perahera .last-img {
+    width: 200px;
+    position: none;
+    left: 0;
+    transform: none;
+  }
+  .main .feedback-box {
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-image: linear-gradient(to right, #ffffff, #ededed);
+    height: 100%;
+  }
+  .main .feedback-box h2 {
+    margin: 30px 10px 10px 30px;
+    font-size: 5vw;
+  }
+  .main .feedback-box .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 5px;
+    margin-bottom: 10px;
+  }
+  .main .feedback-box .content .service-box {
+    flex: 25%;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(255, 244, 244);
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .main .feedback-box .content .service-box .feed-img {
+    padding: 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .main .feedback-box .content .service-box .feed-img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .main .feedback-box .content .service-box h3 {
+    font-size: 15px;
+  }
+  .main .feedback-box .content .service-box small {
+    font-size: 10px;
+  }
+  .main .feedback-box .content .service-box p {
+    padding: 10px 0;
+    background-color: rgba(210, 183, 183, 0.39);
+    font-size: 14px;
+  }
+  .main .feedback-box #show-fedbk {
+    width: 100px;
+    height: 40px;
+    position: none;
+    left: 0;
+    transform: none;
+    background-color: red;
   }
 }/*# sourceMappingURL=in-responsive.css.map */

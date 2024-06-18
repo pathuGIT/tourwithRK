@@ -173,7 +173,7 @@
                     </div>
                 </div>
                 <div class="shipt-box" id="poson">
-                <div class="content-inside-poson">
+                    <div class="content-inside-poson">
                             <button id="close-btn3" class="close-btn"><img src="img/exit.png" alt=""></button>
                             
                             <div><img src="img/traditional/vel.jpg" alt="kandy perahera"></div>
@@ -253,9 +253,9 @@
             </div>
             
             <form method="post">
-                <button type="submit" name="show-fedbk"  class="show-fedbk w3-button w3-black w3-light-grey" style="margin-left: 30px; width: 95%">Show all feedbacks</button>
+                <button type="submit" name="show-fedbk" id="show-fedbk" class="show-fedbk w3-button w3-black w3-light-grey w3-mobile">Show all feedbacks</button>
             </form>
-                 </div>
+        </div>
     </div>
 
     

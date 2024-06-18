@@ -43,11 +43,14 @@
     .main{
       .test{
           flex-direction: column;
-  
+          background-color: white;
+          background-image:none;
         .cover{
         }
         .dot{
+          top: 15%;
           div{
+            font-size: 20px;
           }
         }
         //create the responsive style for info-box class here
@@ -67,7 +70,337 @@
           }
         }
       }
+
+      .about-box{
+        border: 1px solid rgb(0, 0, 0);
+        height: 100vh;
+        display: block;
+        .left-col{
+          border: 1px solid black;
+          .scroll-box{
+            border: 1px solid rgb(255, 0, 0);
+            height: auto;
+            overflow-y: none;
+            display: flex;
+            div{
+              width: 99%;
+              height: auto;
+              overflow: hidden;
+              padding: 2px;
+              margin-top: 5px;
+              box-shadow: none;
+              border: 1px solid rgba(31, 31, 31, 0.299);
+              p{
+                padding: 5px;
+                text-align: center;
+                font-size: 12px;
+                height: 40px;
+              }
+              img{
+                width: 100%;
+                cursor: pointer;
+              }
+            }
+            div:last-child{
+              margin-bottom: 5px;
+            }
+          }
+        }
+        //close button
+        .close-btn{
+          padding: 0;
+          position: absolute;
+          top: 0;
+          right: 0;
+          margin: 10px;
+          font-size: 10px;
+          cursor: pointer;
+          background-color:#3598b171;
+          width: 40px;
+        }
+      
+      .right-col{
+        border: 3px solid rgb(0, 0, 0);
+        margin: 10px;
+        height: 60vh;
+        position: relative;
+        .shipt-box{
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          background-color: #00ae43;
+        }
+        #aboutlanka{ // About lanka Styling Start
+          .content-inside-lanak{
+            //padding: 0 50px;
+            padding: 70px 30px 0 30px;
+            div{
+              h2{
+                font-size: 3vh;
+                font-weight: 400
+              }
+              #ayubowan{
+                font-size: 10vh;
+              }
+            }
+            p{
+              font-size: 15px;
+              padding: 0;
+              text-align: justify;
+            }
+            .min-box{
+              flex-direction: column;
+              div:nth-child(1){
+                margin: 0 auto;
+                width: 200px;
+                img{
+                  width: 100%;
+                }
+              }
+              div:nth-child(2){
+                h3{
+                  border: 1px solid rgb(255, 217, 0);
+                }
+                p{
+                  font-size: 15px;
+                }
+              }
+              div:nth-child(3){
+                margin: 0 auto;
+                width: 200px;
+                img{
+                  width: 100%;
+                }
+              }
+            }
+          } 
+        }
+        #newYear{
+          .content-inside-year{
+            #close-btn4{
+              padding: 0;
+              position: absolute;
+              top: 0;
+              right: 0;
+              margin: 10px;
+              font-size: 10px;
+              cursor: pointer;
+              background-color:#3598b171;
+              width: 40px;
+            }
+            div{
+              width: 300px;
+              img{
+                width: 100%;
+              }
+            }
+            h2{
+              font-size: 4vw;
+              font-weight: bold;
+            }
+            p{
+              font-size: 15px;
+            }
+            dd{
+              h3{
+                font-size: 5vw;
+                font-weight: bold;
+              }
+              ul{
+                margin-left: 10px;
+                li{
+                  font-size: 14px;
+                }
+              }
+            }
+          } 
+        }
+        
+        #vesak{
+          .content-inside-vesak{
+            #close-btn4{
+              padding: 0;
+              position: absolute;
+              top: 0;
+              right: 0;
+              margin: 10px;
+              font-size: 10px;
+              cursor: pointer;
+              background-color:#3598b171;
+              width: 40px;
+            }
+            div{
+              float: left;
+              margin: 5px;
+              width: 300px;
+              padding: 0 50px 10px 0;
+              img{
+                width: 100%;
+              }
+            }
+            h2{
+              font-size: 5vw;
+              font-weight: bold;
+              padding: 10px;
+            }
+            p{
+              font-size: 15px;
+            }
+            dd{
+              h3{
+                font-size: 5vw;
+                font-weight: bold;
+              }
+              ul{
+                margin-left: 10px;
+                li{
+                  font-size: 14px;
+                }
+              }
+            }
+            .last-img{
+              flex-direction: column;
+            }
+          }
+        }
+        #poson{
+          .content-inside-poson{
+            #close-btn4{
+              padding: 0;
+              position: absolute;
+              top: 0;
+              right: 0;
+              margin: 10px;
+              font-size: 10px;
+              cursor: pointer;
+              background-color:#3598b171;
+              width: 40px;
+            }
+            div{
+              width: 300px;
+              img{
+                width: 100%;
+              }
+            }
+            h2{
+              font-size: 5vw;
+              font-weight: bold;
+            }
+            p{
+              font-size: 15px;
+            }
+            .last-img{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 300px;
+              img{
+                width: 100%;
+                text-align: center;
+                padding: 10px;
+              }
+            }
+          }
+        }
+        #perehera{
+          .content-inside-perahera{
+            
+            div{
+              width: 300px;
+              img{
+                width: 100%;
+              }
+            }
+            h2{
+              font-size: 5vw;
+            }
+            p{
+              font-size: 15px;
+            }
+            dd{
+              h3{
+                font-size: 5vw;
+                padding-bottom: 10px;
+                font-weight: bold;
+              }
+              ul{
+                margin-left: 10px;
+                li{
+                  font-size: 14px;
+                
+                }
+              }
+            }
+            .last-img{
+             width: 200px;
+              position: none;
+              left: 0;
+              transform: none;
+            }
+          }
+        }
+      }
+    }
+
+    .feedback-box{
+      //style for the h2 element 
+      border: 1px solid rgba(0, 0, 0, 0);
+      background-image: linear-gradient(to right, #ffffff , #ededed);
+      height: 100%;
+      h2{
+        margin: 30px 10px 10px 30px;
+        font-size: 5vw;
+      }
+      .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 5px;
+        margin-bottom: 10px;
+        //create styles for all div inside above content class
+        .service-box{
+          flex: 25%;
+          padding: 10px;
+          text-align: center;
+          background-color: rgb(255, 244, 244);
+          margin: 10px;
+          border-radius: 5px;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          .feed-img{
+            padding: 0;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            img{
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+            }
+          }
+          h3{
+            font-size: 15px;
+          }
+          small{
+            font-size: 10px;
+          }
+          p{
+            padding: 10px 0;
+            background-color: rgba(210, 183, 183, 0.39);
+            font-size: 14px;
+          }
+        }
+        
+      }
+      #show-fedbk{
+        width: 100px;
+        height: 40px;
+        position: none;
+        left: 0;
+        transform: none;
+        background-color: red;
+      }
+    }
     }
     
   }
-  
+ 

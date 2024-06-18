@@ -172,6 +172,7 @@ header{
     //background-image: linear-gradient(to right, #3598b1 , #1c828f2a);
     .left-col{
       flex: 30%;
+      //flex: 50%;
       align-content: center;
     
       .scroll-box{
@@ -217,6 +218,7 @@ header{
     .right-col{
       //border: 1px solid rgba(73, 73, 73, 0.249);
       flex: 70%;
+      //flex: 50%;
       margin: 20px;
       position: relative;
       .shipt-box{
@@ -566,14 +568,18 @@ header{
       }
       
     }
-    #show-fedbk{
-      width: 96%;
-      height: 40px;
-      cursor: pointer;
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-      font-family: $fnt-fmily;
+    form{
+        #show-fedbk{
+        width: 96%;
+        height: 40px;
+        cursor: pointer;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: $fnt-fmily;
+        margin-left: 10px; 
+        width: 95%
+      }
     }
   }
 }
