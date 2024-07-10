@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="..//css/index.css">
         <link rel="stylesheet" type="text/css" href="..//css/servise.css">
         <link rel="stylesheet" type="text/css" href="..//css/in-responsive.css">
+        <link rel="stylesheet" type="text/css" href="..//css/service-responsive.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -35,7 +36,7 @@
                     </div>
                 </div>
                 
-                <div class="day-tour">
+                <div class="day-tour" id="day-tour">
                     <!-- <p>Day Tours</p>
                     <p class="introduction">We offer guided day trips and excursions to most popular attractions and also to lesser known but very adventurous and authentic attractions of Sri Lanka. These day tours designed for those who have limited time to explore Sri Lanka’s must visit tourist attractions. These are mainly day trips in Sri Lanka that start and end in Colombo, Negombo or in Colombo airport, where the tourist is expected to purchase entrance tickets and meals. Rates includes transfers in an air conditioned private vehicles driven by English speaking tourist chauffeurs.</p> -->
 
@@ -44,7 +45,7 @@
                     <h2>Introduction</h2>
                     <p>Explore Sri Lanka's top attractions with our guided day tours, perfect for travelers with limited time. Our tours cover both popular and off-the-beaten-path destinations, starting and ending in Colombo, Negombo, or Colombo airport.</p>
 
-                    <h2 style="margin-top:50px; background-color:rgb(51, 103, 209); color:white; display:inline-block">Highlights of the Tours</h2>
+                    <h2 style="margin-top:50px; ">Highlights of the Tours</h2>
                     
                     <h3>Popular Attractions</h3>
                     <ul>
@@ -62,7 +63,7 @@
                         <li><strong>Kitulgala</strong>: Try thrilling water sports like white-water rafting.</li>
                     </ul>
 
-                    <h2 style="margin-top:60px; background-color:rgb(51, 103, 209); color:white; display:inline-block">Why Choose Our Day Tours?</h2>
+                    <h2 style="margin-top:60px;">Why Choose Our Day Tours?</h2>
                     <ul>
                         <li><strong>Expert Guides</strong>: Knowledgeable and experienced.</li>
                         <li><strong>Customizable Itineraries</strong>: Tailored to your interests.</li>
@@ -73,16 +74,12 @@
                     <h2 style="margin-top:60px;">Book Your Day Tour Today</h2>
                     <p>Make the most of your limited time in Sri Lanka with our guided day tours. Book now to explore the best attractions, whether you're interested in history, nature, or adventure.</p>
 
-                    <h2 style="margin:60px 0 20px 0; background-color:rgb(51, 103, 209); color:white;">FAQs</h2>
-                    <p class="faq"><strong>How long do the day tours last?</strong><br>Between 8 to 12 hours.</p>
-                    <p class="faq"><strong>Are meals included?</strong><br>No, meals are not included.</p>
-                    <p class="faq"><strong>Do I need to buy entrance tickets separately?</strong><br>Yes, entrance tickets must be purchased separately.</p>
-                    <p class="faq"><strong>What about prise?</strong><br>Don't worry we charge low price always.</p>
-                    <p class="faq"><strong>Are the tours suitable for children?</strong><br>Yes of course.</p>
-                    <p class="faq"><strong>Can the tours be customized?</strong><br>Yes, we can tailor the itineraries to fit your needs.</p>
-                </div>
+                    </div>
+                    
+        <?php require_once "footer.php"; ?>
             </div>
-            <div class="section-right">
+            
+            <div class="section-right" id="section-right">
                 <div class="fixed-section-right">
                     <p id="errmsg"></p>
                     <h2>Informed Us</h2>
@@ -131,11 +128,8 @@
                     </form>
                 </div>
             </div>
-            <!-- <div class="experience">
-                <h3>About Me</h3>
-                <p>With over 2 years of experience in the field, I have been providing memorable tours for tourists from all over the world. My dedication to ensuring the best experience for my clients has been the cornerstone of my service.</p>
-            </div> -->
         </div>
+
         <?php
             // Database connection variables
             $servername = "localhost:3308";
@@ -182,6 +176,7 @@
             // Close connection
             $conn->close();
         ?>
+
         <script>
             document.addEventListener('DOMContentLoaded', function() {
                 window.onscroll = function() {myFunction2()};

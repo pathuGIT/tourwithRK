@@ -33,9 +33,8 @@
                 overflow-y: auto; /* Enables vertical scrolling */
                 padding: 10px;
                 border: 1px solid #ccc; /* Optional: adds a border */
-                margin: 30px 10px;
                 width: 80%; /* Adjust based on your preference */
-                margin: 0 auto;
+                margin: 50px auto;
             }
 
             .feedback {
@@ -109,7 +108,7 @@
             }
 
             // Fetch feedback
-            $sql = "SELECT username, email, country, feedback, image_path FROM feedback";
+            $sql = "SELECT username, email, country, feedback, image_path FROM feedback where `check` = 1";
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
@@ -160,7 +159,7 @@
                         item.style.display = "none";
                         console.log("Hidden:", item);
                     }
-                });  
+                }); 
             }
             
 

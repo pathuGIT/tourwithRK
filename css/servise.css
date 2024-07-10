@@ -6,7 +6,7 @@
   align-items: flex-start;
 }
 .container .section-left {
-  border-right: 1px solid black;
+  border-right: 1px solid rgba(0, 0, 0, 0.118);
   padding: 30px 0 20px 0;
   flex: 70%;
 }
@@ -46,6 +46,7 @@
 .container .section-left .day-tour h2 {
   font-size: large;
   font-weight: 500;
+  color: rgb(0, 82, 246);
 }
 .container .section-left .day-tour p {
   font-size: medium;
@@ -63,15 +64,6 @@
 .container .section-left .day-tour ul li {
   margin: 10px 0;
   font-size: medium;
-}
-.container .section-left .day-tour .faq {
-  background-color: rgba(245, 245, 245, 0.549);
-  margin-bottom: 10px;
-  padding: 5px;
-  cursor: pointer;
-}
-.container .section-left .day-tour .faq:hover {
-  background-color: rgba(211, 211, 211, 0.8);
 }
 .container .section-right {
   flex: 30%;

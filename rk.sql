@@ -11,6 +11,8 @@ CREATE TABLE IF NOT EXISTS feedback (
 );
 ALTER TABLE feedback
 ADD CONSTRAINT unique_email UNIQUE (email);
+ALTER TABLE feedback ADD COLUMN `check` TINYINT(1) NOT NULL DEFAULT 0;
+
 
 CREATE TABLE IF NOT EXISTS bookings (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -23,3 +25,13 @@ CREATE TABLE IF NOT EXISTS bookings (
     vehicle VARCHAR(255) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+ALTER TABLE bookings ADD COLUMN `status` VARCHAR(50) NOT NULL DEFAULT 'new';
+
+CREATE TABLE admin (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+INSERT INTO admin (username, password) VALUES ('adminUser', 'adminPass');
+INSERT INTO admin (username, password) VALUES ('secondAdmin', 'secondPass');

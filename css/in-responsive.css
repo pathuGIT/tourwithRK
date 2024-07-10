@@ -21,6 +21,9 @@
   header .bottomnav ul li a {
     color: white;
   }
+  header .bottomnav ul li:not(:first-child) {
+    display: none;
+  }
   .main .test {
     flex-direction: column;
     background-color: white;
@@ -93,7 +96,7 @@
   .main .about-box .right-col {
     border: 1px solid rgba(0, 0, 0, 0.458);
     margin: 10px;
-    height: 60vh;
+    height: 90vh;
     position: relative;
   }
   .main .about-box .right-col .shipt-box {
@@ -333,5 +336,18 @@
     left: 0;
     transform: none;
     background-color: red;
+  }
+  .main .faq-box {
+    padding: 0 50px 50px 50px;
+  }
+  .main .faq-box .faq {
+    background-color: rgba(245, 245, 245, 0.549);
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px;
+    cursor: pointer;
+  }
+  .main .faq-box .faq:hover {
+    background-color: rgba(211, 211, 211, 0.8);
   }
 }/*# sourceMappingURL=in-responsive.css.map */

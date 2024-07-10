@@ -52,9 +52,9 @@
             <div class="info-box">
                 <div class="travel-info">
                     <h2>Explore  with Confidence</h2>
-                    <p>
+                    <!-- <p>
                         With my extensive experience as a trusted tourist driver, we ensure your holiday experience is both exciting and compliant with recommended health guidelines. From airport pick-up to drop-off, we take care of all the details, allowing you to fully enjoy your personalized journey. 
-                    </p>
+                    </p> -->
                     <p id="strong-line"><strong>Just book your flight & let us handle the rest.</strong></p>
                     <!-- <p><strong>Contact us for step-by-step instructions:</strong></p> -->
                     <p>
@@ -253,14 +253,23 @@
             </div>
             
             <form method="post">
-                <button type="submit" name="show-fedbk" id="show-fedbk" class="show-fedbk w3-button w3-black w3-light-grey w3-mobile">Show all feedbacks</button>
+                <button type="submit" name="show-fedbk" id="show-fedbk" class="show-fedbk w3-button w3-black w3-light-grey w3-mobile">View all feedbacks</button>
             </form>
         </div>
+        <div class="faq-box">
+            <h2 style="margin:60px 0 20px 0;color:rgb(51, 103, 209);">FAQs</h2>
+            <p class="faq"><strong>How long do the day tours last?</strong><br>Between 8 to 12 hours.</p>
+            <p class="faq"><strong>Are meals included?</strong><br>No, meals are not included.</p>
+            <p class="faq"><strong>Do I need to buy entrance tickets separately?</strong><br>Yes, entrance tickets must be purchased separately.</p>
+            <p class="faq"><strong>What about prise?</strong><br>Don't worry we charge low price always.</p>
+            <p class="faq"><strong>Are the tours suitable for children?</strong><br>Yes of course.</p>
+            <p class="faq"><strong>Can the tours be customized?</strong><br>Yes, we can tailor the itineraries to fit your needs.</p>
+                
+        </div>
     </div>
+    <?php require_once "content/footer.php"; ?>
 
     
-
-    <?php require_once "content/footer.php"; ?>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             window.onscroll = function() {myFunction2()};
@@ -274,12 +283,6 @@
                     navbar.classList.remove("sticky");
                 }
             }
-
-            
-            // var navItems = document.querySelectorAll('#myTopnav ul li:not(:first-child)');
-            // navItems.forEach(function(item) {
-            //     item.style.display = "block";
-            // });
 
         });
         

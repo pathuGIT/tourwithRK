@@ -67,6 +67,8 @@
                 <li>Facebook: <a href="https://www.facebook.com/keerthi.lakshan.54?mibextid=ZbWKwL" target="_blank">Our Facebook Page</a></li>
             </ul>
         </section>
+       
+        <?php require_once "footer.php"; ?>
 
         <script>
             document.addEventListener('DOMContentLoaded', function() {
