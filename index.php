@@ -68,6 +68,7 @@
         
         <div class="about-box">
             <div class="left-col">
+            <p class="event">Special Events</p>
                 <div class="scroll-box">
 
                     <div id="click-perehera"> 

@@ -11,7 +11,7 @@ header a {
   text-decoration: none;
 }
 header .topnav {
-  background-image: linear-gradient(to right, #3598b1, #1c818f);
+  background-color: #8EC5FC;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -35,7 +35,8 @@ header .topnav .social a i {
   color: white;
 }
 header .bottomnav {
-  background-color: #1a5a74;
+  border: 1px solid rgba(3, 2, 4, 0.2392156863);
+  background-color: #8EC5FC;
   padding: 5px 0;
   z-index: 1;
 }
@@ -55,7 +56,7 @@ header .bottomnav ul a {
   text-decoration: none;
 }
 header .bottomnav ul li:not(:first-child) {
-  border-right: 1px solid rgba(128, 128, 128, 0.873);
+  border-right: 1px solid rgba(3, 2, 4, 0.2392156863);
   padding: 5px 20px;
   cursor: pointer;
 }
@@ -82,15 +83,17 @@ header .bottomnav ul li:not(:first-child):hover {
 .main .test {
   display: flex;
   flex-direction: row-reverse;
-  background-color: #00ff62;
-  background-image: url("..//img/exit.png");
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
   position: relative;
 }
 .main .test .cover {
-  flex: 70%;
+  flex: 100%;
   width: 100%;
+  height: 80vh;
 }
 .main .test .cover img {
+  width: 100%;
   height: 100%;
 }
 .main .test .dot {
@@ -104,7 +107,7 @@ header .bottomnav ul li:not(:first-child):hover {
   font-size: 30px;
 }
 .main .test .info-box {
-  flex: 30%;
+  flex: 40%;
   margin-left: 10%;
   padding: 10px;
   text-align: center;
@@ -113,7 +116,8 @@ header .bottomnav ul li:not(:first-child):hover {
   justify-content: center;
 }
 .main .test .info-box .travel-info {
-  background-color: rgb(255, 244, 244);
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
   padding: 15px 20px;
 }
 .main .test .info-box .travel-info h2 {
@@ -150,13 +154,21 @@ header .bottomnav ul li:not(:first-child):hover {
   flex: 30%;
   align-content: center;
 }
+.main .about-box .left-col .event {
+  margin: 20px 0 40px 50px;
+  padding: 10px;
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: 600;
+  background-color: whitesmoke;
+  width: 45%;
+}
 .main .about-box .left-col .scroll-box {
-  height: 88vh;
-  margin: 0 0 50px 20px;
+  margin: 0 0 50px 50px;
   overflow-y: none;
 }
 .main .about-box .left-col .scroll-box div {
-  width: 40%;
+  width: 50%;
   overflow: hidden;
   margin-top: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);

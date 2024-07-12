@@ -49,16 +49,27 @@
     font-size: 12px;
   }
   .main .about-box {
-    height: 100vh;
+    height: 135vh;
     display: block;
   }
   .main .about-box .left-col {
+    padding-bottom: 5px;
     border: 1px solid rgba(0, 0, 0, 0.07);
+  }
+  .main .about-box .left-col .event {
+    margin: 50px 5px 10px 5px;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 600;
+    background-color: whitesmoke;
+    width: 45%;
   }
   .main .about-box .left-col .scroll-box {
     height: auto;
     overflow-y: none;
     display: flex;
+    margin: 0 5px 50px 5px;
   }
   .main .about-box .left-col .scroll-box div {
     width: 99%;
