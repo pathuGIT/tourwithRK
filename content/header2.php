@@ -1,7 +1,7 @@
 
 <header>
     <div class="topnav" >
-        <li id="logo"><img src="..//img/logo.png"></li>
+        <li id="logo"><img src="..//img/logo.png" alt="Rk tours logo"></li>
         <!-- <li id="brand-name">Train<span style="color: rgb(0, 0, 0);">Go</span></li> -->
         <li class="social">
             <a href=""><i class="fab fa-facebook-f"></i></a>

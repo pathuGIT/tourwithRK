@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>Tour With RK</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Read feedback from travelers who have experienced tours with RK. Discover their stories and insights to help you plan your next adventure.">
         <link rel="stylesheet" type="text/css" href="..//css/index.css">
         <link rel="stylesheet" type="text/css" href="..//css/in-responsive.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">

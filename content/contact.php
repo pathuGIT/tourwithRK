@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <title>Tour With RK| Contact</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Get in touch with Tour With RK. Contact us for inquiries, bookings, and support. We are here to help you with your travel needs.">
         <link rel="stylesheet" type="text/css" href="..//css/index.css">
         <link rel="stylesheet" type="text/css" href="..//css/servise.css">
         <link rel="stylesheet" type="text/css" href="..//css/in-responsive.css">

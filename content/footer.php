@@ -90,8 +90,8 @@
 <footer>
     <div class="footer-section">
         <img src="/tourwithRK/img/logo.png" alt="Logo" style="max-width: 100px;">
-        <p>Your Address Here</p>
-        <p>WhatsApp: +1234567890</p>
+        <p>Ahangama, Sri Lanka</p>
+        <p>Whatsapp: <a href="tel:+94765690030">+94765690030</a></p>
     </div>
     <div class="footer-section">
         <h4>Quick Links</h4>

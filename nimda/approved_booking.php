@@ -21,6 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($stmt->execute()) {
             echo "<script> alert('Successfully Accepted.'); window.location.href='admin.php';</script>";
+            
         } else {
             echo "<script> alert('Error: Could not execute the update.'); window.location.href='admin.php';</script>";
         }

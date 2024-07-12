@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>Submit Feedback</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Submit your feedback for Tour With RK. Share your experiences and help us improve our services.">
         <link rel="stylesheet" type="text/css" href="..//css/index.css">
         <link rel="stylesheet" type="text/css" href="..//css/in-responsive.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">

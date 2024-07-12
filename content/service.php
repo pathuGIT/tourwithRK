@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <title>Tour With RK| Services </title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Discover the range of services offered by Tour With RK. Choose from various tour vehicle options and enjoy a comfortable and memorable travel experience.">
         <link rel="stylesheet" type="text/css" href="..//css/index.css">
         <link rel="stylesheet" type="text/css" href="..//css/servise.css">
         <link rel="stylesheet" type="text/css" href="..//css/in-responsive.css">

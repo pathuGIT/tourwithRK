@@ -211,8 +211,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <td><?php echo htmlspecialchars($row['vehicle']); ?></td>
                         <td><?php echo htmlspecialchars($row['created_at']); ?></td>
                         <td>
-                            <a href="https://wa.me/<?php echo htmlspecialchars($row['phone']); ?>" target="_blank">WhatsApp</a> |
-                            <a href="mailto:<?php echo htmlspecialchars($row['email']); ?>">Email</a>
+                            <a href="https://wa.me/<?php echo htmlspecialchars($row['phone']); ?>" target="_blank"><?php echo htmlspecialchars($row['phone']); ?></a> |
+                            <a href="mailto:<?php echo htmlspecialchars($row['email']); ?>"><?php echo htmlspecialchars($row['email']); ?></a>
                         </td>
                         <td>
                             <form action="approved_booking.php" method="post">

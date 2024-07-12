@@ -20,6 +20,7 @@
         <meta charset="UTF-8">
         <title>Tour With RK</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Explore the best tours with RK. Discover amazing destinations, book your trips, and read feedback from other travelers.">
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="stylesheet" type="text/css" href="css/in-responsive.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -41,9 +42,9 @@
     <div class="container main">
         <div class="test">
             <div class="cover">
-                <img class="mySlides" src="img/slideShow/ask2.png" style="width:100%">
-                <img class="mySlides" src="img/slideShow/ask1.png" style="width:100%">
-                <img class="mySlides" src="img/slideShow/ask3.png" style="width:100%">
+                <img class="mySlides" src="img/slideShow/ask2.png" style="width:100%" alt="slide-photos">
+                <img class="mySlides" src="img/slideShow/ask1.png" style="width:100%" alt="slide-photos">
+                <img class="mySlides" src="img/slideShow/ask3.png" style="width:100%" alt="slide-photos">
             </div>
             <div class="dot" style="width:100%">
                 <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
@@ -58,8 +59,8 @@
                     <p id="strong-line"><strong>Just book your flight & let us handle the rest.</strong></p>
                     <!-- <p><strong>Contact us for step-by-step instructions:</strong></p> -->
                     <p>
-                        <strong>WhatsApp:</strong> +94 721058986<br>
-                        <strong>Email:</strong> <a href="mailto:info@tourwithrk.com">info@tourwithrk.com</a>
+                        <strong>WhatsApp:</strong> <a href="https://wa.me/+94765690030" target="_blank" class="whatsapp-link">+94765690030</a><br>
+                        <strong>Email:</strong> <a href="mailto:Keerthilakshan55@gmail.com">Keerthilakshan55@gmail.com</a>
                     </p>
                 </div>
             </div>
@@ -91,7 +92,7 @@
                 
                 <div class="shipt-box" id="perehera">
                     <div class="content-inside-perahera">
-                        <button id="close-btn4" class="close-btn"><img src="img/exit.png" alt=""></button>
+                        <button id="close-btn4" class="close-btn"><img src="img/exit.png" alt="close-image"></button>
                         
                         <div><img src="img/traditional/kandy-perahera (2).jpg" alt="kandy perahera"></div>
                         <h2>Kandy Esala Perahera</h2>
@@ -112,13 +113,13 @@
                                 </ul>
                             </dd>
                         </dl>
-                        <div class="last-img"><img src="img/traditional/kandy-perahera (1).jpg" alt=""></div>
+                        <div class="last-img"><img src="img/traditional/kandy-perahera (1).jpg" alt="kandy perahera"></div>
                         
                     </div>
                 </div>
                 <div class="shipt-box" id="newYear">
                     <div class="content-inside-year">
-                            <button id="close-btn1" class="close-btn"><img src="img/exit.png" alt=""></button>
+                            <button id="close-btn1" class="close-btn"><img src="img/exit.png" alt="close button"></button>
                             
                             <div><img src="img/traditional/new-year.jpg" alt="kandy perahera"></div>
                             <h2>Celebrate the New Year with Sri Lankans</h2>
@@ -126,7 +127,7 @@
                                 Experience the vibrant and joyous celebration of the Sri Lankan New Year, known as "Aluth Avurudda" in Sinhala and "Puthandu" in Tamil. This significant cultural event typically occurs in mid-April, marking the end of the harvest season and the beginning of the new year according to the Sinhala and Tamil solar calendar.
                                 <br><br>
                             </p>
-                            <div style="float: right; padding: 20px 0 30px 50px; "><img src="img/traditional/New-Year2.jpeg" alt=""></div>
+                            <div style="float: right; padding: 20px 0 30px 50px; "><img src="img/traditional/New-Year2.jpeg" alt="New Year"></div>
                             <dl>
                                 <dd>
                                     <h3>Festival Highlights:</h3>
@@ -143,7 +144,7 @@
                 </div>
                 <div class="shipt-box" id="vesak">
                     <div class="content-inside-vesak">
-                            <button id="close-btn2" class="close-btn"><img src="img/exit.png" alt=""></button>
+                            <button id="close-btn2" class="close-btn"><img src="img/exit.png" alt="close button"></button>
                             
                             <div><img src="img/traditional/Vesak2.jpg" alt="kandy perahera"></div>
                             <h2>Poya Day Celebrations in Sri Lanka</h2>
@@ -174,7 +175,7 @@
                 </div>
                 <div class="shipt-box" id="poson">
                     <div class="content-inside-poson">
-                            <button id="close-btn3" class="close-btn"><img src="img/exit.png" alt=""></button>
+                            <button id="close-btn3" class="close-btn"><img src="img/exit.png" alt="close button"></button>
                             
                             <div><img src="img/traditional/vel.jpg" alt="kandy perahera"></div>
                             <h2>Vel Festival</h2>
@@ -183,7 +184,7 @@
                                 <br><br>
                             </p>
                             <div class="last-img">
-                                <img src="img/traditional/vel3.jpg" alt="">
+                                <img src="img/traditional/vel3.jpg" alt="Vel Event">
                             </div>
                             
                     </div>
@@ -198,13 +199,13 @@
                             Sri Lanka is a tropical paradise that offers a unique blend of natural beauty, rich history, and vibrant culture. From pristine beaches and lush tea plantations to ancient temples and wildlife sanctuaries, the island has something for everyone. Whether you are looking for adventure, relaxation, or cultural experiences, Sri Lanka has it all. Let us help you discover the best of this enchanting island with our personalized tour packages.
                         </p>    
                         <div class="min-box">
-                            <div><img src="img/traditional/galle-f.png" alt="" title="galle"></div>
+                            <div><img src="img/traditional/galle-f.png" alt="Galle fort" title="galle"></div>
                             <div>
                                 <h3>The Gem of the Indian Ocean</h3>
                                 <p>Experience Sri Lanka’s stunning beaches, lush jungles, and ancient wonders. Savor world-class cuisine, vibrant culture, and thrilling safaris. Your perfect paradise getaway awaits!</p>
                                 
                             </div>
-                            <div><img src="img/traditional/tw-elephant.png" alt="" title="Yale" ></div>
+                            <div><img src="img/traditional/tw-elephant.png" alt="Yale Elephant" title="Yale" ></div>
                         </div>
                     </div>
                 </div>
